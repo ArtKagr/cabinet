@@ -1,0 +1,811 @@
+.lfx-table {
+  border: 1px solid #d9dce1;
+  margin-bottom: 0;
+
+  &.-trades.-sm,
+  &.-trades_history.-sm {
+    margin-top: 20px;
+  }
+
+  &.-instruments.-rtl {
+    margin-left: 30px;
+  }
+
+  &-head {
+    background-color: $extra-secondary;
+    border-bottom: 1px solid #d9dce1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: "Roboto-Light", "sans-serif";
+
+    &.-trades.-sm,
+    &.-trades_history.-sm,
+    &.-bottom_sidebar.-sm,
+    &.-copiers.-sm,
+    &.-copiers_history.-sm {
+      display: none;
+    }
+    &.-copiers_partner.-md,
+    &.-copiers_partner.-sm {
+      display: none;
+    }
+
+    &.-bottom_sidebar {
+      background-color: white;
+    }
+
+    &.-analytics_signals {
+      @media screen and (max-width: 1100px) {
+        display: none;
+      }
+    }
+
+    tr {
+      transform: translateY(-1px);
+
+      th {
+        padding: 1px 5px 2px 5px;
+        border-bottom: none;
+
+        .lfx-table-head {
+
+          &-symbol,
+          &-quote,
+          &-trade_period,
+          &-risk,
+          &-commission,
+          &-copy,
+          &-aggregate_funds,
+          &-trader_buttons,
+          &-profit_traders,
+          &-change,
+          &-chart,
+          &-mood,
+          &-volatility,
+          &-cmd,
+          &-volume,
+          &-open_time,
+          &-close_time,
+          &-open_price,
+          &-close_price,
+          &-current_level,
+          &-sl,
+          &-tp,
+          &-profit,
+          &-my_profit,
+          &-recommendations,
+          &-duration,
+          &-copy_type,
+          &-amount,
+          &-signal_indicator {
+            text-align: center;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $gray;
+
+            &.-primary {
+              color: $dark-blue;
+            }
+
+            &.-text_left {
+              text-align: left;
+            }
+
+            &.-text_right {
+              text-align: right;
+            }
+          }
+
+          &-profit,
+          &-my_profit,
+          &-amount {
+
+            &.-ltr {
+              text-align: right;
+              padding-right: 4px;
+            }
+
+            &.-rtl {
+              text-align: left;
+              padding-left: 4px;
+            }
+
+            &.-traders {
+              text-align: left;
+            }
+          }
+
+          &-risk {
+            text-align: center !important;
+          }
+
+          &-recommendations,
+          &-signal_indicator {
+
+            &.-ltr {
+              text-align: left !important;
+            }
+
+            &.-rtl {
+              text-align: right !important;
+            }
+          }
+
+          &-commissions,
+          &-place,
+          &-uid {
+            color: $dark-blue;
+            font-size: 10px;
+            text-transform: uppercase;
+
+            &.-ltr {
+              text-align: left !important;
+            }
+
+            &.-rtl {
+              text-align: right !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-body {
+
+    &-row {
+      background-color: white;
+      font-size: 15px;
+      cursor: pointer;
+      height: 75px;
+
+      @media screen and (max-width: 1223px) {
+        font-size: 13px;
+      }
+
+      &.-trades,
+      &.-trades_history {
+        height: 70px;
+      }
+
+      &.-analytics_signals {
+        height: 50px;
+        font-size: 13px;
+      }
+
+      &.-trades.-sm,
+      &.-trades_history.-sm,
+      &.-bottom_sidebar.-sm {
+        height: 90px;
+      }
+
+      &.-bottom_sidebar {
+        background-color: $extra-secondary;
+        height: 30px !important;
+
+        td {
+          padding: 9px 5px 10px;
+          font-size: 13px;
+
+          @media screen and (max-width: 9999px) {
+            &:nth-child(1) {
+              width: 2%;
+            }
+            &:nth-child(2) {
+              width: 10%;
+            }
+            &:nth-child(3) {
+              width: 10%;
+            }
+            &:nth-child(4) {
+              width: 8%;
+            }
+            &:nth-child(5) {
+              width: 10%;
+            }
+            &:nth-child(6) {
+              width: 5%;
+            }
+            &:nth-child(7) {
+              width: 5%;
+            }
+            &:nth-child(8) {
+              width: 10%;
+            }
+            &:nth-child(9) {
+              width: 10%;
+            }
+            &:nth-child(10) {
+              width: 10%;
+            }
+            &:nth-child(11) {
+              width: 17%;
+            }
+            &:nth-child(12) {
+              width: 3%;
+            }
+          }
+
+          @media screen and (max-width: 1700px) {
+            &:nth-child(1) {
+              width: 2%;
+            }
+            &:nth-child(2) {
+              width: 13%;
+            }
+            &:nth-child(3) {
+              width: 10%;
+            }
+            &:nth-child(4) {
+              width: 8%;
+            }
+            &:nth-child(5) {
+              width: 12%;
+            }
+            &:nth-child(6) {
+              width: 5%;
+            }
+            &:nth-child(7) {
+              width: 5%;
+            }
+            &:nth-child(8) {
+              width: 8%;
+            }
+            &:nth-child(9) {
+              width: 8%;
+            }
+            &:nth-child(10) {
+              width: 10%;
+            }
+            &:nth-child(11) {
+              width: 16%;
+            }
+            &:nth-child(12) {
+              width: 3%;
+            }
+          }
+
+          @media screen and (max-width: 1450px) {
+            &:nth-child(1) {
+              width: 2%;
+            }
+            &:nth-child(2) {
+              width: 17%;
+            }
+            &:nth-child(3) {
+              width: 8%;
+            }
+            &:nth-child(4) {
+              width: 8%;
+            }
+            &:nth-child(5) {
+              width: 12%;
+            }
+            &:nth-child(6) {
+              width: 5%;
+            }
+            &:nth-child(7) {
+              width: 5%;
+            }
+            &:nth-child(8) {
+              width: 8%;
+            }
+            &:nth-child(9) {
+              width: 8%;
+            }
+            &:nth-child(10) {
+              width: 10%;
+            }
+            &:nth-child(11) {
+              width: 14%;
+            }
+            &:nth-child(12) {
+              width: 3%;
+            }
+          }
+
+          @media screen and (max-width: 1223px) {
+            &:nth-child(1) {
+              width: 2%;
+            }
+            &:nth-child(2) {
+              width: 20%;
+            }
+            &:nth-child(3) {
+              width: 18%;
+            }
+            &:nth-child(4) {
+              width: 20%;
+            }
+            &:nth-child(5) {
+              width: 15%;
+            }
+            &:nth-child(6) {
+              width: 22%;
+            }
+            &:nth-child(7) {
+              width: 3%;
+            }
+          }
+
+          @media screen and (max-width: 950px) {
+            &:nth-child(1) {
+              width: 2%;
+            }
+            &:nth-child(2) {
+              width: 30%;
+            }
+            &:nth-child(3) {
+              width: 18%;
+            }
+            &:nth-child(4) {
+              width: 10%;
+            }
+            &:nth-child(5) {
+              width: 15%;
+            }
+            &:nth-child(6) {
+              width: 22%;
+            }
+            &:nth-child(7) {
+              width: 3%;
+            }
+          }
+
+          img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+          }
+        }
+      }
+
+      td {
+        vertical-align: middle;
+
+        .lfx-table-body {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          &-symbol,
+          &-favorite,
+          &-cmd,
+          &-volume,
+          &-open_time,
+          &-close_time,
+          &-open_price,
+          &-close_price,
+          &-current_level,
+          &-profit_traders,
+          &-sl,
+          &-tp {
+            text-align: center;
+          }
+
+          &-place,
+          &-uid,
+          &-body {
+            font-size: 14px;
+            color: $dark-primary;
+          }
+
+          &-symbol {
+            font-family: "Roboto-Bold", "sans-serif";
+            text-align: left;
+            color: $primary;
+            font-weight: 500;
+
+            &.-ltr {
+              padding-left: 8px;
+            }
+
+            &.-rtl {
+              padding-right: 8px;
+            }
+
+            &.-copiers {
+              font-size: 13px;
+            }
+
+            @media screen and (max-width: 767px) {
+              font-size: 13px;
+              padding-left: 0;
+            }
+          }
+
+          &-cmd {
+            display: inline-block;
+            padding: 2px 5px;
+            line-height: 1;
+            font-family: "Roboto-Bold", "sans-serif";
+            text-transform: uppercase;
+            font-weight: 500;
+
+            &.-trades_history {
+              text-align: center;
+              width: 100%;
+            }
+
+            &.-bs {
+
+              &-buy, &-label_green {
+                color: white;
+                font-size: 10px;
+                background-color: $success;
+              }
+
+              &-sell, &-label_red {
+                color: white;
+                font-size: 10px;
+                background-color: $danger;
+              }
+
+              &-copy, &-label_blue {
+                color: white;
+                font-size: 10px;
+                background-color: $primary;
+              }
+
+              &-detach, &-label_yellow {
+                color: white;
+                font-size: 10px;
+                background-color: $orange;
+              }
+            }
+
+            @media screen and (max-width: 767px) {
+              font-size: 10px;
+              padding: 2px 5px 1px;
+            }
+
+            &.-buy, &.-label_green {
+              color: $success;
+              font-size: 15px;
+
+              @media screen and (max-width: 1223px) {
+                color: $success;
+                font-size: 13px;
+              }
+
+              @media screen and (max-width: 767px) {
+                color: white;
+                font-size: 10px;
+                background-color: $success;
+              }
+            }
+
+            &.-sell, &.-label_red {
+              color: $danger;
+              font-size: 15px;
+
+              @media screen and (max-width: 1223px) {
+                color: $danger;
+                font-size: 13px;
+              }
+
+              @media screen and (max-width: 767px) {
+                color: white;
+                font-size: 10px;
+                background-color: $danger;
+              }
+            }
+
+            &.-copy, &.-label_blue {
+              color: $primary;
+
+              @media screen and (max-width: 767px) {
+                color: white;
+                background-color: $primary;
+              }
+            }
+
+            &.-detach {
+              color: $orange;
+
+              @media screen and (max-width: 767px) {
+                color: white;
+                background-color: $orange;
+              }
+            }
+          }
+
+          &-volume {
+            font-family: "Roboto-Bold", "sans-serif";
+            color: $dark-primary;
+
+            @media screen and (max-width: 767px) {
+              text-align: left;
+              font-size: 13px;
+            }
+          }
+
+          &-quote {
+            font-family: "Roboto-Bold", "sans-serif";
+            font-size: 15px;
+            color: $dark-primary;
+
+            &.-ltr {
+              text-align: left;
+            }
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+
+          &-volatility {
+            font-size: 15px;
+            color: $dark-primary;
+
+            &.-ltr {
+              text-align: left;
+            }
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+
+          &-change {
+            font-family: "Roboto-Bold", "sans-serif";
+            //width: 275px;
+            font-size: 15px;
+            color: $dark-primary;
+
+            &.-ltr {
+              text-align: left;
+            }
+
+            &.-rtl {
+              text-align: right;
+            }
+
+            &.-trading {
+              width: 100px;
+            }
+
+            &.-trading_buttons {
+              width: 300px;
+            }
+
+            &.-red {
+              color: $danger;
+            }
+
+            &.-green {
+              color: $success;
+            }
+          }
+
+          &-trade_period,
+          &-profit_traders,
+          &-commission,
+          &-copy,
+          &-aggregate_funds {
+            font-family: "Roboto-Bold", "sans-serif";
+          }
+
+          &-mood {
+            font-family: "Roboto-Bold", "sans-serif";
+            text-align: left;
+            font-size: 15px;
+            color: $dark-primary;
+
+            &.-red {
+              color: $danger;
+            }
+
+            &.-green {
+              color: $success;
+            }
+          }
+
+          &-open_time {
+
+            &-date {
+              color: $gray;
+            }
+
+            &-time {
+
+            }
+          }
+
+          &-profit,
+          &-my_profit,
+          &-profitability {
+
+            &.-profit {
+              color: $success;
+            }
+
+            &.-loss {
+              color: $danger;
+            }
+
+            &.-ltr {
+              text-align: left !important;
+            }
+
+            &.-rtl {
+              text-align: right !important;
+            }
+          }
+
+          &-profit,
+          &-my_profit {
+            width: 100px;
+
+            &.-ltr {
+              text-align: left;
+            }
+
+            &.-rtl {
+              text-align: right;
+            }
+
+            &.-trader_portfolio {
+              width: 200px;
+
+              @media screen and (max-width: 767px) {
+                width: 100px;
+              }
+            }
+
+            @media screen and (max-width: 767px) {
+              text-align: left;
+            }
+          }
+
+          &-profitability {
+            font-size: 11px;
+            width: 100px;
+
+            &.-ltr {
+              text-align: right;
+            }
+
+            &.-rtl {
+              text-align: left;
+            }
+
+            @media screen and (max-width: 767px) {
+
+              &.-ltr {
+                text-align: left;
+              }
+
+              &.-rtl {
+                text-align: right;
+              }
+            }
+          }
+
+          &-buttons {
+            display: flex;
+
+            &.-ltr {
+              justify-content: flex-end;
+            }
+
+            &.-rtl {
+              justify-content: flex-start;
+            }
+
+            button {
+              width: 90px;
+              padding: 5px 9px;
+            }
+
+            &.-bottom_sidebar {
+              button {
+                width: 100px;
+                padding: 5px 9px;
+              }
+            }
+          }
+
+          &-trader_logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+
+            &.-bottom_sidebar {
+              width: 30px;
+              height: 30px;
+              margin: 0 10px;
+            }
+
+            &.-profile_trades {
+              width: 50px;
+              height: 50px;
+            }
+
+            &.-popup {
+              width: 40px;
+              height: 40px;
+            }
+
+            &.-empty {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $dark-primary;
+
+              span {
+                color: white;
+                font-size: 10px;
+                text-transform: uppercase;
+                line-height: 1;
+              }
+            }
+
+            &.-xs {
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          &-recommendations {
+            text-transform: uppercase;
+            font-size: 11px;
+
+            &.-rtl {
+              text-align: right;
+            }
+
+            &.-sell_active,
+            &.-sell {
+              color: $danger;
+            }
+
+            &.-buy_active,
+            &.-buy {
+              color: $success;
+            }
+
+            &.-neutral {
+              color: $dark-primary;
+            }
+          }
+        }
+      }
+    }
+
+    .lfx-table-body-row.-instruments {
+      td:nth-child(1) {
+        padding: 0;
+        width: 50px;
+      }
+      td:nth-child(5) {
+        padding: 0;
+        width: 240px;
+      }
+      td:nth-child(8) {
+        padding: 0;
+        width: 320px;
+      }
+    }
+
+    .lfx-table-body-row.-traders {
+      td:nth-child(1) {
+        padding: 0;
+        width: 50px;
+      }
+      td:nth-child(5) {
+        padding: 0;
+        width: 240px;
+      }
+      td:nth-child(10) {
+        width: 275px;
+      }
+    }
+  }
+}
+
+.table.b-table > thead > tr > .table-b-table-default, .table.b-table > tbody > tr > .table-b-table-default, .table.b-table > tfoot > tr > .table-b-table-default {
+  position: static !important;
+  //background-color: $extra-secondary;
+}

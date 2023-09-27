@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="300" viewBox="0 0 450 300" fill="none">
+    <g id="Canvas" fill="none">
+        <rect fill="#CB0028" width="450" height="300"/>
+        <rect fill="#FFFFFF" y="50" width="450" height="200"/>
+        <rect fill="#1A237B" y="100" width="450" height="100"/>
+    </g>
+</svg>

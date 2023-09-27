@@ -1,0 +1,13 @@
+<svg width="512" height="337" viewBox="0 0 512 337" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group">
+<g id="Vector">
+<path d="M 37.3447 25L 0.655202 25C 0.293386 25 0 24.7054 0 24.3421L 0 0.657924C 0 0.294605 0.293386 0 0.655202 0L 37.3448 0C 37.7066 0 38 0.294605 38 0.657924L 38 24.3421C 37.9999 24.7055 37.7065 25 37.3447 25Z" transform="scale(13.4737)" fill="#B5C0D5"/>
+</g>
+<g id="Intersect">
+<path d="M 21.7861 0L 0.655273 0C 0.292969 0 0 0.294922 0 0.658203L 0 24.3418C 0 24.7051 0.292969 25 0.655273 25L 16.4287 25L 21.7861 0Z" transform="scale(13.4737)" fill="#C4CAD6"/>
+</g>
+</g>
+</g>
+</svg>
+

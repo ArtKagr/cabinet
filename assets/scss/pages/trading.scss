@@ -1,0 +1,1277 @@
+.trading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+
+  &-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    width: 100%;
+    //overflow-x: hidden;
+
+    @media screen and (max-width: 1223px) {
+      grid-gap: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-gap: 10px;
+      margin-top: 10px;
+      overflow: auto;
+
+      &-card {
+        margin: 0 10px;
+      }
+    }
+
+    &.-ltr {
+      padding-left: 30px;
+
+      @media screen and (max-width: 768px) {
+        padding-left: 0 !important;
+        overflow: auto;
+      }
+    }
+
+    &.-rtl {
+      padding-right: 30px;
+
+      @media screen and (max-width: 768px) {
+        padding-right: 0 !important;
+        overflow: auto;
+      }
+    }
+
+    &.-table {
+      padding-right: 30px;
+
+      @media screen and (max-width: 768px) {
+        padding-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: 1600px) {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .trading-page-card {
+        width: calc(33.3% - 30px);
+      }
+    }
+
+    @media screen and (max-width: 1223px) {
+      grid-template-columns: 1fr 1fr;
+
+      .trading-page-card {
+        width: calc(50% - 30px);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 0;
+
+      .trading-page-card {
+        width: 100%;
+      }
+    }
+
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+      width: calc(25% - 30px);
+      border: 1px solid $light-gray;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+      overflow: hidden;
+
+      &-chart_container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      &-empty {
+        display: flex;
+        flex-direction: column;
+        width: calc(25% - 30px) !important;
+        border: 1px solid $light-gray;
+        border-radius: 5px;
+        cursor: pointer;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background-color: inherit;
+        height: 240px;
+
+        @media screen and (max-width: 1600px) {
+          width: calc(33.3% - 30px) !important;
+        }
+
+        @media screen and (max-width: 1223px) {
+          width: calc(50% - 30px) !important;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 100% !important;
+          margin: 0 10px;
+        }
+
+      }
+
+      &.-no_settings {
+        padding-bottom: 10px;
+      }
+
+      &-head {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &.-ltr {
+          padding: 16px 6px 0 16px;
+        }
+
+        &.-rtl {
+          padding: 16px 16px 0 6px;
+        }
+
+        &.-chart_is_hidden {
+          padding-bottom: 20px;
+        }
+
+        &.-popup {
+          display: flex;
+          align-items: center;
+          border-top: 1px solid $light-gray;
+          width: calc(100% + 40px);
+          transform: translateX(-20px);
+          padding: 20px 20px 14px;
+
+          &.-ltr {
+
+          }
+
+          &.-rtl {
+            justify-content: flex-end;
+          }
+        }
+
+        &-star {
+          position: absolute;
+          top: 0;
+          margin: 6px;
+
+          &.-ltr {
+            right: 0;
+          }
+
+          &.-rtl {
+            left: 0;
+          }
+        }
+
+        &-symbol {
+
+          &.-ltr {
+            margin-right: 10px;
+          }
+
+          &.-rtl {
+            margin-left: 10px;
+          }
+
+          &-single {
+
+            &.-ltr {
+              margin-right: 10px;
+            }
+
+            &.-rtl {
+              margin: 0 16px 0 10px;
+            }
+          }
+        }
+
+        &-title {
+          font-weight: 500;
+          color: $dark-blue;
+          text-transform: uppercase;
+          font-size: 15px;
+          width: 120px;
+          margin-top: 8px;
+
+          &.-ltr {
+            margin-left: 10px;
+          }
+
+          &.-rtl {
+            text-align: right;
+            margin-right: 10px;
+          }
+        }
+
+        &-avatar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90px;
+          height: 90px;
+          background-color: $light-secondary;
+          border-radius: 100px;
+
+          &.-ltr {
+            margin-right: 20px;
+          }
+
+          &.-rtl {
+            margin-left: 20px;
+          }
+        }
+
+        &-trader_logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90px;
+          height: 90px;
+          border-radius: 100px;
+          background-color: $light-secondary;
+
+          &.-ltr {
+            margin-right: 20px;
+          }
+
+          &.-rtl {
+            margin-left: 20px;
+          }
+
+          &.-table {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            margin-right: 10px;
+
+            span {
+              font-size: 16px;
+            }
+          }
+
+          span {
+            font-size: 30px;
+            color: $dark-primary;
+          }
+        }
+      }
+
+      &-data {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        padding: 18px 20px 0;
+
+        &.-chart_is_hidden {
+          padding: 18px 20px 20px;
+        }
+
+        &.-popup {
+          padding: 0 20px 10px;
+          width: calc(100% + 40px);
+          transform: translateX(-20px);
+          border-bottom: 1px solid $light-gray;
+        }
+
+        &-quote {
+          display: flex;
+          flex-direction: column;
+          width: 170px;
+
+          @media screen and (max-width: 1223px) {
+            width: 150px
+          }
+
+          &-value {
+            font-size: 28px;
+            color: $dark-blue;
+            line-height: 1;
+
+            &.-rtl {
+              text-align: right;
+            }
+
+            &.-info {
+              font-size: 24px;
+            }
+
+            @media screen and (max-width: 768px) {
+              font-size: 24px;
+            }
+
+            &.-danger {
+              color: $danger;
+            }
+
+            &.-success {
+              color: $success;
+            }
+          }
+
+          &-title {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $gray;
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+        }
+
+        &-change {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      &-chart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+
+        &.-table {
+          position: static;
+        }
+
+        &.-template {
+          height: 100px;
+          background-color: inherit;
+          position: absolute;
+        }
+
+        &.-popup {
+          width: calc(100% + 40px);
+          transform: translateX(-20px);
+          position: relative;
+
+          .trading-page-card-chart-line {
+            .sparkline-wrap {
+              svg {
+                width: calc(100% + 4px) !important;
+
+                g {
+                  line {
+                    display: none;
+                  }
+                }
+                line {
+                  display: none !important;
+                }
+              }
+            }
+          }
+        }
+
+        &.-off {
+          opacity: 0.5
+        }
+
+        &-line {
+
+          &.-ltr {
+
+            .sparkline-wrap {
+              transform: translate(-2px, 2px);
+
+              @media screen and (max-width: 767px) {
+                transform: translate(1px, 2px);
+              }
+              svg { g { line { display: none; } } line { stroke: blue !important; } }
+            }
+          }
+
+          &.-rtl {
+
+            .sparkline-wrap {
+              transform: translate(2px, 2px);
+
+              @media screen and (max-width: 767px) {
+                transform: translate(2px, 2px);
+              }
+              svg { g { line { display: none; } } line { stroke: blue !important; } }
+            }
+          }
+
+          &.-table {
+
+            .sparkline-wrap {
+              transform: translateY(2px);
+              svg {
+                line {
+                  display: none !important;
+                }
+              }
+            }
+          }
+
+        }
+
+        &-base {
+          background-color: #DCF0FB;
+          height: 20px;
+
+          &.-table {
+            margin: 0 2px;
+          }
+        }
+      }
+
+      &-info {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        background-color: $extra-secondary;
+        border-top: 1px solid #d9dce1;
+        padding: 10px 20px 8px;
+
+        &.-ltr {
+
+        }
+
+        &.-rtl {
+          justify-content: flex-end;
+        }
+
+        &.-popup {
+          width: calc(100% + 40px);
+          transform: translateX(-20px);
+          position: relative;
+        }
+
+        &.-off {
+          opacity: 0.5
+        }
+
+        &-mood {
+          display: flex;
+          flex-direction: column;
+
+          &.-ltr {
+            margin-right: 30px;
+          }
+
+          &.-rtl {
+            margin-left: 30px;
+          }
+
+          &-data {
+            display: flex;
+            align-items: center;
+
+            &-value {
+              color: $dark-primary;
+              font-size: 20px;
+              line-height: 1.2;
+
+              &.-rtl {
+                text-align: right;
+              }
+
+              @media screen and (max-width: 1600px) {
+                font-size: 18px;
+              }
+
+              @media screen and (max-width: 1223px) {
+                font-size: 16px;
+              }
+
+              @media screen and (max-width: 767px) {
+                font-size: 20px;
+              }
+
+              &.-red {
+                color: $danger;
+              }
+
+              &.-green {
+                color: $success;
+              }
+            }
+
+            &-arrow {
+              width: 12px;
+              height: 10px;
+
+              &.-ltr {
+                margin-left: 5px;
+              }
+
+              &.-rtl {
+                margin-right: 5px;
+              }
+            }
+          }
+
+          &-title {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $secondary;
+
+            &.-rtl {
+              text-align: right;
+            }
+
+            @media screen and (max-width: 1223px) {
+              font-size: 8px;
+            }
+
+            @media screen and (max-width: 767px) {
+              font-size: 10px;
+            }
+          }
+        }
+
+        &-volatility {
+          display: flex;
+          flex-direction: column;
+
+          &.-ltr {
+            margin-right: 25px;
+          }
+
+          &.-rtl {
+            margin-left: 25px;
+          }
+
+          &-value {
+            font-size: 20px;
+            line-height: 1.2;
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+
+          &-title {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $secondary;
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+        }
+
+        &-spread {
+          display: flex;
+          flex-direction: column;
+
+          &.-ltr {
+
+          }
+
+          &.-rtl {
+            margin-left: 30px;
+          }
+
+          &-value {
+            font-size: 20px;
+            line-height: 1.2;
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+
+          &-title {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $secondary;
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+        }
+      }
+
+      &-buttons_trader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+
+        &.-popup {
+          width: calc(100% + 40px);
+          transform: translateX(-20px);
+          border-bottom: 1px solid $light-gray;
+          position: relative;
+        }
+
+        &.-off {
+          opacity: 0.5
+        }
+
+        button {
+          padding: 10px;
+          width: 35%;
+        }
+      }
+
+      &-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+        padding: 10px;
+        width: 100%;
+        z-index: 100;
+
+        &.-table {
+          padding: 0 10px 0 0;
+        }
+
+        &.-popup {
+          width: calc(100% + 40px);
+          transform: translateX(-20px);
+          border-bottom: 1px solid $light-gray;
+          position: relative;
+        }
+
+        &.-off {
+          opacity: 0.5
+        }
+
+        button {
+          padding: 5px 5px 3px;
+          width: 35%;
+        }
+
+        .btn.disabled {
+          background-color: #d9dce1 !important;
+        }
+
+        &-button {
+          display: flex;
+          flex-direction: column;
+
+          &-value {
+            font-size: 18px;
+            line-height: 1.3;
+            font-weight: 500;
+          }
+
+          &-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 1.36;
+          }
+        }
+
+        &-volume {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex: 1;
+          padding: 0 10px;
+
+          &:hover {
+
+            .trading-page-card-buttons-volume-title {
+              color: $dark-blue;
+            }
+            .trading-page-card-buttons-volume-value {
+              color: $dark-blue;
+            }
+          }
+
+          &-title {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $gray;
+            text-align: center;
+            padding-bottom: 5px;
+          }
+
+          &-value {
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #d9dce1;
+            font-size: 13px;
+            color: $gray;
+            text-align: center;
+          }
+        }
+
+        &-input {
+          padding: 10px;
+          border-radius: 3px;
+          border: 1px solid $light-secondary;
+          width: 70%;
+
+          &.-ltr {
+            margin-right: 10px;
+          }
+
+          &.-rtl {
+            margin-left: 10px;
+          }
+
+          span {
+            font-size: 14px;
+            color: $dark-primary;
+          }
+        }
+      }
+
+      &-switch {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        z-index: 100;
+        cursor: pointer;
+      }
+    }
+
+    &-instrument {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: calc(100vh - 330px);
+
+      @media screen and (max-width: 767px) {
+        height: 100vh;
+      }
+
+      &.-ltr {
+        padding-right: 30px;
+      }
+
+      &.-rtl {
+        padding-left: 30px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        padding-right: 0;
+        height: 100vh;
+        align-items: flex-start;
+      }
+
+      &-chart {
+        width: 100%;
+        height: 100%;
+         //width: calc(100% - 340px);
+        //width: calc(100% - 680px);
+        //height: calc(100vh - 330px);
+        border-top: 1px solid $light-secondary;
+        border-bottom: 1px solid $light-secondary;
+        background-color: white;
+
+        &.-ltr {
+          border-left: 1px solid $light-secondary;
+        }
+
+        &.-rtl {
+          border-right: 1px solid $light-secondary;
+        }
+
+        &.-no_header {
+          height: calc(100vh - 160px);
+        }
+
+        @media screen and (min-width: 767px) {
+          width: 100%;
+          //height: calc(100vh - 230px);
+          //transform: translateY(-20px);
+        }
+      }
+
+      &-settings {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        min-width: 340px;
+        max-width: 340px;
+        height: 100%;
+        border: 1px solid $light-secondary;
+        min-height: calc(100vh - 305px);
+
+        &.-popup {
+          border: none;
+          min-width: 100%;
+          max-width: 100%;
+          width: 100%;
+        }
+
+        &.-hidden {
+          display: none;
+        }
+
+        //&.-ltr {
+        //  margin-right: 30px;
+        //}
+        //
+        //&.-rtl {
+        //  margin-left: 30px;
+        //}
+
+        &.-order {
+          width: 360px;
+        }
+
+        &-title {
+          padding: 20px;
+
+          &.-rtl {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  &-analytics {
+    display: flex;
+    color: $dark-primary;
+
+    @media screen and (min-width: 1000px) {
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &-analytics_container {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+
+      &.-ltr {
+        margin-right: 30px;
+
+        @media screen and (max-width: 1000px) {
+          margin: 0;
+        }
+      }
+
+      &.-rtl {
+        margin-left: 30px;
+
+        @media screen and (max-width: 1000px) {
+          margin: 0;
+        }
+      }
+
+      &.-empty {
+        overflow: hidden;
+
+        @media screen and (max-width: 768px) {
+          margin-left: 15px !important;
+          margin-right: 15px !important;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        overflow: auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 0 15px;
+      }
+
+      &-card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 15px 20px;
+        margin-bottom: 30px;
+        border: 1px solid $light-secondary;
+        border-radius: 3px;
+        font-size: 14px;
+        max-width: 750px;
+
+        &.-empty {
+          width: 750px !important;
+
+          @media screen and (max-width: 1000px) {
+            width: 100% !important;
+          }
+
+          span {
+            margin-bottom: 0;
+          }
+        }
+
+        @media screen and (max-width: 1000px) {
+          max-width: 1000px;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 20px;
+        }
+
+        &-type {
+          background-color: $secondary;
+          font-size: 10px;
+          color: white;
+          text-transform: uppercase;
+          line-height: 1;
+          padding: 2px 5px 1px;
+
+          &.-ltr {
+            margin-right: 5px;
+          }
+
+          &.-rtl {
+            margin-left: 5px;
+          }
+        }
+
+        &-direction {
+          padding: 2px 5px 1px;
+          line-height: 1;
+          font-size: 10px;
+          color: white;
+          text-transform: uppercase;
+
+          &.-ltr {
+            margin-right: 5px;
+          }
+
+          &.-rtl {
+            margin-left: 5px;
+          }
+
+          &.-red {
+            background-color: $danger;
+          }
+
+          &.-gray {
+            background-color: $secondary;
+          }
+
+          &.-green {
+            background-color: $success;
+          }
+        }
+
+        &-published_at {
+          color: $dark-primary;
+          line-height: 1;
+          padding-top: 2px;
+        }
+
+        &-title {
+          font-size: 15px;
+
+          &.-rtl {
+            text-align: right;
+          }
+        }
+
+        &-short {
+          padding: 24px 0;
+          line-height: 1.5;
+
+          &.-rtl {
+            text-align: right;
+          }
+        }
+
+        &-details {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          &-title {
+            font-family: "Roboto-Medium", "sans-serif";
+            font-size: 14px;
+            color: $primary;
+
+            &.-ltr {
+              margin-right: 5px;
+            }
+
+            &.-rtl {
+              margin-left: 5px;
+            }
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          &-icon {
+            path {
+              fill: $primary;
+            }
+          }
+        }
+
+        &-description {
+          display: flex;
+          flex-direction: column;
+
+          &.-rtl {
+            text-align: right;
+          }
+
+          p {
+            max-width: 100%;
+
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    &-signals_container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      border: 1px solid $light-secondary;
+      border-radius: 3px;
+      font-size: 14px;
+      width: 360px;
+
+      &.-ltr {
+        margin-right: 30px;
+      }
+
+      &.-rtl {
+        margin-left: 30px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+
+        &.-ltr {
+          margin-right: 0;
+        }
+
+        &.-rtl {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        font-size: 20px;
+        color: #2d3540;
+        line-height: 1.2;
+        margin-bottom: 15px;
+
+        &.-rtl {
+          text-align: right;
+        }
+      }
+
+      &-signal {
+
+        &-indicators {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          &-indicator {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+
+            &-title {
+              font-size: 12px;
+              color: $secondary;
+              margin-bottom: 4px;
+
+              &.-rtl {
+                text-align: right;
+              }
+            }
+
+            &-scale {
+
+              @media screen and (max-width: 1000px) {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      &-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 14px;
+        color: $secondary;
+        margin: 15px 0;
+        overflow: auto;
+
+        @media screen and (max-width: 1000px) {
+          justify-content: flex-start;
+        }
+
+        &-item {
+          cursor: pointer;
+          line-height: 1.3;
+          text-decoration: none;
+          color: $secondary;
+
+          &:hover {
+            text-decoration: none;
+            color: $secondary;
+          }
+
+          @media screen and (max-width: 1000px) {
+            margin-right: 28px;
+          }
+
+          &:after {
+            background: none repeat scroll 0 0 #3498db;
+            content: "";
+            display: block;
+            transform: translateY(1px);
+            height: 1px;
+            left: 50%;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+
+          &:hover:after {
+            width: 100%;
+            left: 0;
+          }
+
+          &.-active {
+            color: $dark-primary;
+            border-bottom: 2px solid $primary;
+          }
+        }
+      }
+
+      &-summary {
+        display: flex;
+        align-items: center;
+
+        &-title {
+          font-size: 12px;
+          color: $dark-primary;
+
+          &.-ltr {
+            margin-right: 5px;
+          }
+
+          &.-rtl {
+            margin-left: 5px;
+          }
+        }
+
+        &-result {
+          padding: 2px 5px 1px;
+          line-height: 1;
+          font-size: 10px;
+          color: white;
+          text-transform: uppercase;
+
+           &.-red {
+             background-color: $danger;
+           }
+
+          &.-gray {
+            background-color: $secondary;
+          }
+
+          &.-green {
+            background-color: $success;
+          }
+        }
+      }
+    }
+
+    &-market_sentiment {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 15px 20px;
+      border: 1px solid $light-secondary;
+      border-radius: 3px;
+      font-size: 14px;
+      width: 360px;
+
+      &.-ltr {
+        margin-right: 30px;
+      }
+
+      &.-rtl {
+        margin-left: 30px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+
+      &-title {
+        font-size: 20px;
+        color: #2d3540;
+        line-height: 1.2;
+        margin-bottom: 15px;
+
+        &.-rtl {
+          text-align: right;
+        }
+      }
+
+      &-scale_container {
+        display: flex;
+        flex-direction: column;
+
+        &-scale {
+          display: flex;
+          width: 100%;
+          height: 5px;
+          margin-bottom: 2px;
+
+          &-sale {
+            background-color: $danger;
+          }
+
+          &-purchase {
+            background-color: $success;
+          }
+        }
+
+        &-description {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          text-transform: uppercase;
+          font-size: 10px;
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .trading_page_child {
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+}

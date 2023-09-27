@@ -1,0 +1,128 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  padding: 20px 30px 15px 30px;
+  margin-bottom: 0;
+
+  &.-trading {
+
+    @media screen and (max-width: 767px) {
+      padding: 10px 10px 0 10px;
+    }
+  }
+
+  &.-traders {
+
+    @media screen and (max-width: 767px) {
+      padding: 10px 10px 0 20px;
+    }
+
+
+    .menu-title {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 20px 0 20px;
+    background-color: white;
+    border-top: 1px solid $light-secondary;
+    border-bottom: 1px solid $light-secondary;
+    border-right: 1px solid $extra-secondary;
+  }
+
+  &.-borderless {
+    @media screen and (max-width: 767px) {
+      padding: 0;
+      background-color: white;
+      border-top: 0;
+      border-bottom: 0;
+    }
+  }
+
+  &.-static_menu {
+    @media screen and (max-width: 767px) {
+      border-top: 0;
+      border-bottom: none;
+      background-color: inherit;
+    }
+  }
+
+  &-title {
+    font-size: 20px;
+    color: $dark-primary;
+    line-height: 1;
+
+    &.-rtl {
+      text-align: right;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
+
+    //@media screen and (max-width: 767px) {
+    //  margin-bottom: 10px;
+    //}
+  }
+
+  &-items {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+
+    &.-static {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    &.-static {
+      display: flex;
+    }
+
+    &.-rtl {
+      float: right;
+    }
+
+    &-item {
+      display: inline;
+      font-size: 14px;
+      color: $secondary;
+      cursor: pointer;
+      list-style: none;
+      white-space: nowrap;
+
+      &.-ltr {
+        margin-right: 30px;
+      }
+
+      &.-rtl {
+        margin-left: 30px;
+      }
+
+      &-link {
+
+        &.-active {
+          border-bottom: 2px solid $primary;
+          color: $dark-primary;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:active {
+          color: $secondary;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+  }
+}

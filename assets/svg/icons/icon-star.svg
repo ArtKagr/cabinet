@@ -1,0 +1,8 @@
+<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g transform="translate(-571 4285)">
+		<use xlink:href="#icon-star-fill-1" transform="translate(578 -4278)" fill="#F2B16B"/>
+	</g>
+	<defs>
+		<path id="icon-star-fill-1" d="M 8 0L 10.116 5.08754L 15.6085 5.52786L 11.4238 9.11246L 12.7023 14.4721L 8 11.6L 3.29772 14.4721L 4.5762 9.11246L 0.391548 5.52786L 5.88397 5.08754L 8 0Z"/>
+	</defs>
+</svg>

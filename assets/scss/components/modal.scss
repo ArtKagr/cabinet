@@ -1,0 +1,582 @@
+.modal {
+
+  &.-trader-changing,
+  &.-analytics-data,
+  &.-analytics-signals,
+  &.-analytics-calendar {
+    min-width: 720px;
+
+    @media screen and (max-width: 767px) {
+      min-width: 300px;
+    }
+  }
+
+
+
+  &-open .modal {
+    overflow-y: hidden !important;
+    padding-left: 0 !important;
+  }
+
+  &-dialog {
+    transform: translate(0, -50px) !important;
+
+    @media screen and (min-width: 576px) {
+      max-width: 767px !important;
+      min-height: 100vh !important;
+      transform: translate(0, 0) !important;
+    }
+
+    @media screen and (min-width: 767px) {
+      max-width: 500px !important;
+      transform: translate(0, 0) !important;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin: 0 !important;
+      max-width: 767px !important;
+      min-height: 100vh !important;
+      transform: translate(0, 0) !important;
+    }
+  }
+
+  &-content {
+    border: none;
+    background-color: inherit;
+
+    @media screen and (max-width: 767px) {
+      width: 767px !important;
+      height: 100vh !important;
+    }
+  }
+
+  &-body {
+    padding: 0;
+  }
+}
+
+.modal.fade.show {
+  @media screen and (max-width: 767px) {
+    margin-top: 72px;
+    border-top: 1px solid $extra-secondary;
+  }
+}
+
+#lfx-search-modal.modal.fade.show {
+  margin-top: 72px;
+  z-index: 100 !important;
+}
+
+#lfx-search-modal {
+  .modal-dialog {
+    max-width: 100% !important;
+    left: 90px !important;
+  }
+
+  .modal-container {
+    width: 570px !important;
+    max-height: 580px !important;
+    padding: 0;
+  }
+}
+
+#lfx-modal-refact {
+  .modal-body {
+    overflow: auto !important;
+  }
+}
+
+#lfx-modal,
+#lfx-modal-refact {
+  .modal-dialog {
+    max-width: 100% !important;
+  }
+
+  .modal-container.-deposit_modal {
+    width: 650px !important;
+    padding: 15px 20px;
+    overflow: auto;
+
+    &.-card {
+      width: 1000px !important;
+    }
+  }
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.-search_result {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    margin-top: -28px;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 18px 20px;
+    min-width: 430px;
+
+    &.-refact {
+      padding: 0;
+    }
+
+    &.-trading-card-settings,
+    &.-trader-card-settings {
+      width: 360px;
+      min-width: 360px;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        min-width: 100%;
+      }
+    }
+
+    &.-trader-changing,
+    &.-analytics-data,
+    &.-analytics-signals,
+    &.-analytics-calendar {
+      min-width: 720px;
+
+      @media screen and (max-width: 767px) {
+        min-width: 300px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 100vh;
+      width: 100%;
+    }
+
+    &-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 18px 20px;
+
+      &-questionnaire {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        &-arrow {
+          fill: #8e9aac;
+          cursor: pointer;
+        }
+
+        span {
+          line-height: 1;
+        }
+      }
+
+      &.-buyVps,
+      &.-editUsername,
+      &.-affiliatePromoMakeApp {
+        margin-bottom: 0;
+      }
+
+      &.-questionnaireEu,
+      &.-questionnaireTrader {
+        display: flex;
+        padding: 28px 30px 0;
+        margin-bottom: 0;
+
+        span {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      &.-twitterWatcher {
+        padding: 18px 20px;
+        border-bottom: 1px solid $light-secondary;
+      }
+
+      &.-traderEdit,
+      &.-editEmail,
+      &.-editPhone,
+      &.-editIdentity,
+      &.-editAddress,
+      &.-pepStatus {
+        padding: 28px 30px;
+        margin-bottom: 0;
+        border-bottom: 1px solid $light-secondary;
+
+        @media screen and (max-width: 767px) {
+          padding: 18px 20px;
+        }
+      }
+
+      &.-newReal,
+      &.-affiliatePrograms {
+        border-bottom: 1px solid $light-secondary;
+      }
+
+      &.-login,
+      &.-registration {
+        padding: 28px 30px;
+        margin-bottom: 0;
+      }
+
+      &.-copyAction,
+      &.-affiliateEditCompany {
+        margin-bottom: 0;
+      }
+
+      &.-registrationPage {
+        padding: 30px 30px 0 30px;
+      }
+
+      &.-resetPassword {
+        margin-bottom: 0;
+        padding: 30px 30px 20px 30px;
+      }
+
+      &.-confirmEmail {
+        margin-bottom: 0;
+        padding: 30px 30px 15px 30px;
+      }
+
+      &-title {
+        font-size: 20px;
+        color: $dark-primary;
+      }
+
+      &-close {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1000;
+
+        &:hover {
+          path {
+            fill: #3b4b68;
+          }
+        }
+
+        path {
+          fill: $secondary;
+        }
+
+        &.-white {
+
+          path {
+            fill: white;
+          }
+        }
+      }
+    }
+
+    &-dropdown {
+      width: 100%;
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      height: 40px;
+      user-select: none;
+      cursor: pointer;
+
+      span {
+        margin: 0 auto;
+      }
+
+      .lfx-forms-button {
+        width: 100%;
+      }
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+
+      &-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &-button {
+          width: 50%;
+
+          &:first-child {
+            margin-right: 10px;
+          }
+
+        }
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+
+      &-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+          padding: 10px 0;
+          width: 100%;
+
+          &-title {
+            font-size: 10px;
+            color: $secondary;
+            text-transform: uppercase;
+          }
+
+          &-value {
+            font-size: 15px;
+            color: $dark-primary;
+          }
+
+          &-edit {
+            fill: $primary;
+            cursor: pointer;
+            margin-left: 8px;
+            font-size: 14px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          &-accept {
+            fill: $primary;
+            cursor: pointer;
+            margin-left: 4px;
+            font-size: 24px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          &-container {
+            display: flex;
+            flex-direction: column;
+          }
+
+          &-collapse {
+            position: relative;
+
+            &-close {
+              position: absolute;
+              top: -15px;
+              right: 0;
+              cursor: pointer;
+              font-size: 20px;
+
+              path {
+                fill: $secondary;
+              }
+            }
+          }
+        }
+      }
+
+      &-block {
+        display: flex;
+        align-items: center;
+      }
+
+      &-buttons {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          margin-top: 16px;
+
+          button {
+            width: 100% !important;
+
+            &:first-child {
+              margin-right: 0 !important;
+              margin-bottom: 16px;
+            }
+          }
+        }
+
+        button {
+          width: 50%;
+
+          &:first-child {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      &-agreement {
+        display: flex;
+        align-items: center;
+
+        &-checkbox {
+          width: 30px;
+          height: 30px;
+          fill: $secondary;
+          margin-right: 16px;
+          cursor: pointer;
+        }
+
+        span {
+          font-size: 12px;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.modal-form {
+  width: 100%;
+  display: flex;
+  padding: 0 20px 18px;
+  max-width: 430px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+  }
+
+  &.-profile_about {
+    padding: 20px 30px;
+  }
+
+  &.-registration,
+  &.-registrationPage,
+  &.-loginPage {
+    max-width: 480px;
+
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.modal-select {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 10px;
+    border: 1px solid $light-secondary;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 37px;
+
+    &.-bubble {
+      padding: 0;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 2px solid $light-secondary;
+
+      &.-opened {
+        border-bottom: 2px solid $primary;
+      }
+    }
+
+    &-value {
+      font-size: 14px;
+      color: $dark-primary;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &.-bubble {
+        font-size: 16px;
+      }
+
+      &-transfer {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &-value {
+          font-size: 15px;
+          color: $dark-primary;
+
+          &.-ltr {
+            margin-right: 4px;
+          }
+
+          &.-rtl {
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+
+    &.-opened {
+      border-bottom: 1px solid white;
+      border-radius: 3px 3px 0 0;
+    }
+
+    &.-error {
+      border: 1px solid $danger;
+      border-radius: 3px;
+    }
+  }
+
+  &-options {
+    position: absolute;
+    max-height: 210px;
+    overflow: auto;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 3px 3px;
+    border-right: 1px solid $light-secondary;
+    border-bottom: 1px solid $light-secondary;
+    border-left: 1px solid $light-secondary;
+    z-index: 9999;
+    background-color: white;
+
+    &.-bubble {
+      top: 37px;
+    }
+
+    &-option {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: 15px;
+      color: #8e9aac;
+
+      &:hover, &.-active {
+        color: $primary;
+      }
+    }
+
+    &-empty {
+      padding: 10px;
+      color: $secondary;
+      font-size: 15px;
+    }
+  }
+
+}

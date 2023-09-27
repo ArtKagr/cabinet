@@ -1,0 +1,37 @@
+<template>
+  <svg
+    width="19"
+    height="19"
+    viewBox="0 0 19 19"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+    <title> clock</title>
+    <desc>Created using Figma</desc>
+    <g id="Canvas" transform="translate(-6815 -38529)">
+      <g id="icon / clock">
+        <g id="Group">
+          <g id="Group">
+            <g id="Vector">
+              <use xlink:href="#path0_fill1122" transform="translate(6815 38529)" fill="#96AAB5" />
+            </g>
+            <g id="Vector">
+              <use xlink:href="#path1_fill2211" transform="translate(6823.62 38532.3)" fill="#96AAB5" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <defs>
+      <path id="path0_fill1122" d="M 9.5 0C 4.2617 0 0 4.2617 0 9.5C 0 14.7383 4.2617 19 9.5 19C 14.7383 19 19 14.7383 19 9.5C 19 4.2617 14.7383 0 9.5 0ZM 9.5 16.9786C 5.37636 16.9786 2.02124 13.6238 2.02124 9.5C 2.02124 5.37616 5.37636 2.02144 9.5 2.02144C 13.6236 2.02144 16.9788 5.37616 16.9788 9.5C 16.9788 13.6238 13.6236 16.9786 9.5 16.9786Z" />
+      <path id="path1_fill2211" d="M 5.83376 5.9155L 1.56443 5.9155L 1.56443 0.782215C 1.56443 0.350237 1.21419 -1.49196e-08 0.782215 -1.49196e-08C 0.350237 -1.49196e-08 3.70005e-07 0.350237 3.70005e-07 0.782215L 3.70005e-07 6.69771C 3.70005e-07 7.12969 0.350237 7.47993 0.782215 7.47993L 5.83376 7.47993C 6.26574 7.47993 6.61597 7.12969 6.61597 6.69771C 6.61597 6.26574 6.26574 5.9155 5.83376 5.9155Z" />
+    </defs>
+  </svg>
+</template>
+
+<script>
+export default {
+  name: 'LfxIconClock'
+}
+</script>

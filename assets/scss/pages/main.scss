@@ -1,0 +1,634 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+
+  &-page {
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    &.-ltr {
+      padding-left: 90px;
+    }
+
+    &.-rtl {
+      padding-right: 90px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+
+      &.-ltr {
+        padding-left: 0;
+      }
+
+      &.-rtl {
+        padding-right: 0;
+      }
+    }
+
+    &.-is_default {
+      flex-direction: column;
+    }
+
+    &.-bottom_sidebar_is_visible {
+      margin-bottom: 74px;
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+        overflow: hidden;
+      }
+    }
+
+    &-sidebar {
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f8f8;
+      z-index: 99;
+
+      @media screen and (max-width: 767px) {
+        z-index: 3000;
+      }
+
+      .b-sidebar {
+        width: 90px;
+
+        @media screen and (max-width: 767px) {
+          width: 280px;
+          background-color: white !important;
+        }
+
+        @media screen and (max-width: 375px) {
+          width: 100%;
+        }
+
+        .main-sidebar-logo {
+          display: flex;
+          background-color: white;
+          cursor: pointer;
+          height: 70px;
+
+          &.-ltr {
+            padding: 14px 14px 15px 10px;
+            border-right: 1px solid $extra-secondary;
+          }
+
+          &.-rtl {
+            padding: 14px 10px 15px 14px;
+            border-left: 1px solid $extra-secondary;
+          }
+
+          @media screen and (max-width: 767px) {
+            padding: 11px 14px 12px 14px;
+          }
+
+          &-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            &-full {
+
+              svg {
+                width: 107px;
+                height: 32px;
+              }
+            }
+
+            &-close {
+              width: 17px;
+              height: 17px;
+              margin-right: 12px;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+
+      &-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        @media screen and (max-width: 767px) {
+          margin-top: 0;
+        }
+
+        &-button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          margin-bottom: 15px;
+          text-decoration: none;
+          //border-bottom: 1px solid #f0f1f2;
+
+          @media screen and (max-width: 767px) {
+            flex-direction: row;
+            padding: 16px 10px 10px 20px;
+            margin-bottom: 0;
+            border-bottom: 1px solid #eaeced;
+            background-color: white;
+
+            &:nth-child(1) {
+              border-top: 1px solid #eaeced;
+            }
+          }
+
+          &.-partner,
+          &.-trading {
+            border-top: 1px solid $secondary;
+            padding-top: 10px;
+
+            @media screen and (max-width: 767px) {
+              border-top: none;
+              padding: 16px 10px 10px 20px;
+            }
+          }
+
+          &:hover {
+            text-decoration: none;
+
+            svg {
+              fill: $primary;
+            }
+
+            span {
+              color: black;
+            }
+          }
+
+          &.-active {
+
+            svg {
+              fill: $primary;
+
+              path {
+                fill: $primary;
+              }
+            }
+
+            span {
+              color: black;
+            }
+          }
+
+          &-icon {
+            display: flex;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+
+            &-trade {
+              width: 19px;
+              height: 20px;
+            }
+
+            &-traders {
+              width: 24px;
+              height: 24px;
+            }
+
+            &-analytics {
+              width: 22px;
+              height: 19px;
+            }
+
+            &-profile {
+              width: 30px;
+              height: 30px;
+            }
+
+            &-finance {
+              width: 28px;
+              height: 21px;
+            }
+
+            &-education {
+              width: 22px;
+              height: 20px;
+            }
+
+            &-metatrader {
+              width: 22px;
+              height: 18px;
+            }
+
+            &-partner {
+              width: 28px;
+              height: 18px;
+            }
+
+            &-campaigns {
+              width: 26px;
+              height: 24px;
+            }
+
+            &-promo {
+              width: 24px;
+              height: 24px;
+            }
+
+            &-programs {
+              width: 28px;
+              height: 28px;
+            }
+
+            &-bets {
+              width: 24px;
+              height: 24px;
+            }
+
+            svg {
+              margin: 0 auto;
+              fill: $secondary;
+            }
+          }
+
+          &-text {
+            text-transform: uppercase;
+            font-size: 10px;
+            color: $secondary;
+
+            @media screen and (max-width: 767px) {
+              text-transform: none;
+              font-size: 18px;
+              line-height: 1;
+
+              &.-ltr {
+                padding-left: 20px;
+              }
+
+              &.-rtl {
+                padding-right: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      &-menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+
+        &-button {
+          padding: 20px;
+
+          button {
+            width: 100%;
+          }
+        }
+
+        &-logout {
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          cursor: pointer;
+
+          &:hover {
+
+            .main-page-sidebar-menu-logout-logo {
+              g {
+                use {
+                  fill: #3498db;
+                }
+              }
+            }
+
+            .main-page-sidebar-menu-logout-text {
+              color: #3B4B68;
+            }
+          }
+
+          &-logo {
+
+            &.-ltr {
+              margin-right: 30px;
+            }
+
+            &.-rtl {
+              margin-left: 30px;
+            }
+          }
+
+          &-text {
+            font-size: 18px;
+            color: #8e9aac;
+          }
+        }
+      }
+    }
+
+    &-bottom_sidebar {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      overflow: hidden;
+      bottom: 0;
+      width: 100%;
+      z-index: 100;
+      transition: transform 0.5s;
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s;
+        z-index: 1;
+      }
+
+      &-label_container {
+        display: flex;
+
+        &-label {
+          display: flex;
+          align-items: center;
+          background-color: $blue;
+          padding: 4px 11px;
+          cursor: pointer;
+          width: 90px;
+
+          &-icon {
+            width: 9px;
+
+            &.-ltr {
+              margin-right: 4px;
+            }
+
+            &.-rtl {
+              margin-left: 4px;
+            }
+
+            &.-shown {
+              transform: rotate(180deg);
+            }
+
+            path {
+              fill: white;
+            }
+          }
+
+          &-text {
+            font-size: 10px;
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      &-table {
+        background-color: #ebedee;
+
+        &-trades_history {
+          font-size: 14px;
+          color: $blue;
+          text-align: center;
+          width: 100%;
+          padding: 10px 0;
+          user-select: none;
+          cursor: pointer;
+          background-color: #ebedee;
+        }
+      }
+
+      &-info {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        padding: 0 70px 0 40px;
+        background-color: $dark-blue;
+        cursor: pointer;
+        z-index: 2;
+
+        &.-demo {
+          background-color: white;
+        }
+
+        &.-mobile {
+          height: 40px;
+        }
+
+        &-item {
+          min-width: 160px;
+          display: flex;
+          flex-direction: column;
+
+          &-value {
+            color: white;
+            font-size: 20px;
+            line-height: 1;
+
+            &.-rtl {
+              text-align: right;
+            }
+
+            &.-demo {
+              color: $dark-primary;
+            }
+
+            &.-profit {
+              color: $success;
+            }
+
+            &.-loss {
+              color: $danger;
+            }
+          }
+
+          &-label {
+            color: $gray;
+            font-size: 10px;
+            text-transform: uppercase;
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+
+          &.-flex {
+            width: 110px;
+
+            &-ltr {
+              margin-left: auto;
+              margin-right: 20px;
+            }
+
+            &-rtl {
+              margin-right: auto;
+              margin-left: 20px;
+            }
+          }
+
+        }
+      }
+    }
+
+    &-bottom_sidebar_mobile {
+      transition: transform 0.5s;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      right: 0;
+      height: 100%;
+      top: 72px;
+      overflow: hidden;
+      z-index: 1000 !important;
+
+      &.-chart_shown {
+        @media screen and (max-width: 767px) {
+          top: 0;
+          z-index: 2001 !important;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        top: 61px;
+        z-index: 2001 !important;
+      }
+
+      &-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 40px;
+        background-color: $dark-blue;
+        cursor: pointer;
+
+        &.-demo {
+          background-color: white;
+          border-top: 1px solid #eaeced;
+        }
+
+        &.-shown {
+          border-top: none;
+        }
+
+        &.-ltr {
+          padding-left: 20px;
+        }
+
+        &.-rtl {
+          padding-right: 20px;
+        }
+
+        &-item {
+
+          &-value {
+            color: white;
+            font-size: 16px;
+
+            &.-demo {
+              color: $dark-primary;
+            }
+
+            &.-profit {
+              color: $success;
+            }
+
+            &.-loss {
+              color: $danger;
+            }
+          }
+        }
+
+        &-chevron {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 40px;
+
+          svg {
+            width: 9px;
+            height: 6px;
+            transform: rotate(180deg);
+          }
+
+          &.-demo {
+            background-color: $primary;
+          }
+
+          &.-shown {
+            svg {
+              transform: rotate(0);
+            }
+          }
+
+          &.-ltr {
+            margin-right: 10px;
+          }
+
+          &.-rtl {
+            margin-left: 10px;
+          }
+
+          path {
+            fill: white;
+          }
+        }
+
+        &-menu {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          padding: 0 10px;
+          cursor: pointer;
+          height: 40px;
+
+          svg {
+            margin-top: 8px;
+          }
+
+          &.-ltr {
+            border-left: 1px solid #626F86;
+            margin-left: 20px;
+          }
+
+          &.-rtl {
+            border-right: 1px solid #626F86;
+            margin-right: 20px;
+          }
+
+          &.-demo {
+            border-left: 1px solid #eaeced;
+          }
+        }
+      }
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #ebedee;
+        height: 100%;
+        width: 100%;
+
+        &-table {
+          height: 815px;
+          overflow: auto;
+        }
+
+        &-empty {
+          font-size: 14px;
+          color: $blue;
+          margin: 0 auto;
+          padding-top: 10px;
+          user-select: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &-website_loader {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}

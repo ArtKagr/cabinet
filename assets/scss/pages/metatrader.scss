@@ -1,0 +1,501 @@
+.metatrader {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1260px;
+
+    &.-page {
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      color: $dark-primary;
+    }
+
+    &-titles {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      grid-gap: 0;
+      margin-bottom: 5px;
+
+      &.-ltr {
+        margin-left: 20px;
+      }
+
+      &.-rtl {
+        margin-right: 20px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        display: none;
+      }
+
+      &-title {
+        color: $secondary;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-overflow: ellipsis;
+        width: 100%;
+      }
+    }
+
+    &-trading_container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+
+      &.-page {
+        border: 1px solid $light-secondary;
+        border-radius: 3px;
+        padding: 15px 20px;
+      }
+
+      &-transfer {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 16px 20px 0;
+        border: 1px solid $light-secondary;
+        border-radius: 3px;
+        background-color: white;
+
+        @media screen and (max-width: 1300px) {
+          flex-direction: column;
+        }
+
+        &-forms {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          grid-gap: 30px;
+          width: 100%;
+
+          &.-ltr {
+            margin-right: 30px;
+          }
+
+          &.-rtl {
+            margin-left: 30px;
+          }
+        }
+      }
+
+      &-trading {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        border: 1px solid $light-secondary;
+        border-radius: 3px;
+        background-color: white;
+
+        &.-primary.-ltr {
+          border-left: 5px solid $primary;
+        }
+
+        &.-primary.-rtl {
+          border-right: 5px solid $primary;
+        }
+
+        @media screen and (max-width: 1300px) {
+          flex-direction: column;
+        }
+
+        &-forms {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          grid-row-gap: 30px;
+          width: 100%;
+
+          span {
+            width: 100%;
+          }
+        }
+      }
+
+      &-form {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+
+        .lfx-forms {
+          &-input, &-dropdown {
+            width: 100%;
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+
+        &.-forms {
+          width: 100% !important;
+
+          @media screen and (max-width: 767px) {
+            width: 100% !important;
+          }
+        }
+      }
+
+      &.-accounts {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        grid-row-gap: 20px;
+      }
+
+      &.-open_account {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @media screen and (max-width: 767px) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      &.-left_border {
+        border-left: 5px solid $primary;
+      }
+
+      &.-right_border {
+        border-right: 5px solid $primary;
+      }
+
+      &-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &-description {
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+
+          &-title {
+            font-size: 22px;
+            line-height: 1;
+            font-weight: 500;
+            color: $dark-primary;
+            margin-bottom: 6px;
+          }
+
+          &-subtitle {
+            color: $secondary;
+            font-size: 12px;
+          }
+        }
+
+        &-buttons {
+          display: flex;
+          align-items: center;
+
+          &.-hidden_lg {
+            padding-top: 10px;
+            @media screen and (min-width: 920px) {
+              display: none;
+            }
+
+            @media screen and (max-width: 575px) {
+              flex-direction: column;
+            }
+          }
+
+          &.-hidden_xs {
+            @media screen and (max-width: 919px) {
+              display: none;
+            }
+          }
+
+          &-vps {
+            display: flex;
+            flex-direction: column;
+            margin: 0 15px;
+
+            &-title {
+              border-radius: 3px;
+              background-color: #3B4B68;
+              font-size: 10px;
+              color: white;
+              line-height: 16px;
+              padding: 2px 10px;
+            }
+
+            &-value {
+              color: #8e9aac;
+              font-size: 12px;
+              line-height: 1;
+              padding-top: 3px;
+            }
+          }
+
+          &-button {
+
+            &.-ltr {
+
+              &:first-child {
+                margin-right: 8px;
+              }
+            }
+
+            &.-rtl {
+
+              &:first-child {
+                margin-left: 8px;
+              }
+            }
+
+
+            &:hover {
+              text-decoration: none;
+            }
+
+            @media screen and (max-width: 575px) {
+              display: flex;
+              width: 100%;
+
+              &.-ltr {
+                margin-right: 0 !important;
+              }
+
+              &.-rtl {
+                margin-left: 0 !important;
+              }
+
+              button {
+                width: 100%;
+                margin-right: 0 !important;
+
+                &:first-child {
+                  margin-bottom: 20px;
+                }
+              }
+            }
+
+            &.-forms {
+
+              @media screen and (max-width: 767px) {
+                width: 100%;
+
+                button {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-description {
+        display: grid;
+        grid-gap: 0;
+
+        &.-popup {
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+        }
+
+        &.-page {
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+          @media screen and (max-width: 767px) {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          }
+        }
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+
+          &.-popup {
+            padding: 0;
+          }
+
+          &-title {
+            font-size: 10px;
+            color: $secondary;
+            text-transform: uppercase;
+
+            &.-rtl {
+              text-align: right;
+            }
+          }
+
+          &-value {
+            font-size: 17px;
+            color: $dark-primary;
+            line-height: 1.5;
+
+            &.-popup {
+              white-space: nowrap;
+              width: 150px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          &-change {
+            font-size: 14px;
+            color: $primary;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &-open_account {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 767px) {
+          margin-top: 20px;
+        }
+
+        &-icon {
+          width: 19px;
+          height: 19px;
+          margin-bottom: 6px;
+
+          path {
+            fill: $warning;
+          }
+        }
+
+        &-text {
+          width: 250px;
+        }
+      }
+
+      &-account_item {
+        display: flex;
+        flex-direction: column;
+
+        &-main {
+          display: flex;
+          margin: auto 0;
+          width: 100%;
+        }
+
+        //@media screen and (max-width: 1200px) {
+        //  width: 25%;
+        //}
+        //
+        //@media screen and (max-width: 767px) {
+        //  width: 33%;
+        //}
+        //
+        //@media screen and (max-width: 575px) {
+        //  width: 50%;
+        //}
+
+        &.-title {
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        &.-type {
+          font-size: 12px;
+          font-weight: 600;
+
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+
+        &-title {
+          color: $secondary;
+          font-size: 10px;
+          text-transform: uppercase;
+          text-overflow: ellipsis;
+
+          @media screen and (min-width: 1299px) {
+            display: none;
+          }
+        }
+
+        &-additional {
+          font-size: 12px;
+          font-weight: 600;
+          user-select: none;
+
+          &.-ltr {
+            padding: 10px 10px 10px 0;
+          }
+
+          &.-rtl {
+            padding: 10px 0 10px 10px;
+            text-align: right;
+          }
+
+          @media screen and (min-width: 766px) {
+            display: none;
+          }
+        }
+      }
+
+      &-account_status {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+        user-select: none;
+
+        &.-primary {
+          color: $primary;
+        }
+
+        @media screen and (max-width: 1300px) {
+          margin: auto 0;
+        }
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      &-account_button {
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    }
+
+    &-button {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+
+      &.-transfer {
+        margin-top: 15px;
+      }
+
+      &.-authorization {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1300px) {
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

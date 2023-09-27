@@ -1,0 +1,34 @@
+<svg width="29" height="47" viewBox="0 0 29 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ethereum-1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-7533 -11709)">
+<g id="ethereum-1">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(7547.18 11709)" fill="#343434"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(7533 11709)" fill="#8C8C8C"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(7547.32 11735.7)" fill="#3C3C3B"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path3_fill" transform="translate(7533 11735.7)" fill="#8C8C8C"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path4_fill" transform="translate(7547.5 11726.4)" fill="#141414"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path5_fill" transform="translate(7533 11726.4)" fill="#393939"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0.316621 0L 4.14848e-08 1.07098L 4.14848e-08 32.1485L 0.316621 32.463L 14.8123 23.9359L 0.316621 0Z"/>
+<path id="path1_fill" d="M 14.4957 0L 0 23.9359L 14.4957 32.4631L 14.4957 17.379L 14.4957 0Z"/>
+<path id="path2_fill" d="M 0.178418 8.52279L 1.79768e-07 8.73924L 1.79768e-07 19.8097L 0.178418 20.3283L 14.6828 6.33035e-07L 0.178418 8.52279Z"/>
+<path id="path3_fill" d="M 14.4957 20.3284L 14.4957 8.52278L 0 7.5689e-07L 14.4957 20.3284Z"/>
+<path id="path4_fill" d="M -1.65939e-07 15.0839L 14.4955 6.55691L -1.65939e-07 -3.85326e-07L -1.65939e-07 15.0839Z"/>
+<path id="path5_fill" d="M 0 6.55691L 14.4955 15.084L 14.4955 5.36703e-07L 0 6.55691Z"/>
+</defs>
+</svg>

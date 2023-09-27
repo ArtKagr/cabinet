@@ -1,0 +1,1037 @@
+{
+  "Chart": {
+    "description": "Auto imported from components/chart/chart.vue"
+  },
+  "Chat": {
+    "description": "Auto imported from components/chat/index.vue"
+  },
+  "FinancePaymentCard": {
+    "description": "Auto imported from components/finance/financePaymentCard.vue"
+  },
+  "FormsLfxPreloader": {
+    "description": "Auto imported from components/forms/lfx-preloader.vue"
+  },
+  "FormsLfxToast": {
+    "description": "Auto imported from components/forms/lfx-toast.vue"
+  },
+  "HeaderLanguages": {
+    "description": "Auto imported from components/header/headerLanguages.vue"
+  },
+  "HeaderLanguagesLogo": {
+    "description": "Auto imported from components/header/headerLanguagesLogo.vue"
+  },
+  "HeaderSearch": {
+    "description": "Auto imported from components/header/headerSearch.vue"
+  },
+  "HeaderSearchMobile": {
+    "description": "Auto imported from components/header/headerSearchMobile.vue"
+  },
+  "HeaderTradeMode": {
+    "description": "Auto imported from components/header/headerTradeMode.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/header/index.vue"
+  },
+  "IconsIconBringFriend": {
+    "description": "Auto imported from components/icons/icon-bring-friend.vue"
+  },
+  "IconsLfxIconAdd": {
+    "description": "Auto imported from components/icons/lfx-icon-add.vue"
+  },
+  "IconsLfxIconArrow2Right": {
+    "description": "Auto imported from components/icons/lfx-icon-arrow-2-right.vue"
+  },
+  "IconsLfxIconArrowBack": {
+    "description": "Auto imported from components/icons/lfx-icon-arrow-back.vue"
+  },
+  "IconsLfxIconArrowDown": {
+    "description": "Auto imported from components/icons/lfx-icon-arrow-down.vue"
+  },
+  "IconsLfxIconArrowUp": {
+    "description": "Auto imported from components/icons/lfx-icon-arrow-up.vue"
+  },
+  "IconsLfxIconBook": {
+    "description": "Auto imported from components/icons/lfx-icon-book.vue"
+  },
+  "IconsLfxIconBrains": {
+    "description": "Auto imported from components/icons/lfx-icon-brains.vue"
+  },
+  "IconsLfxIconCalendar": {
+    "description": "Auto imported from components/icons/lfx-icon-calendar.vue"
+  },
+  "IconsLfxIconCardBack": {
+    "description": "Auto imported from components/icons/lfx-icon-card-back.vue"
+  },
+  "IconsLfxIconCardFront": {
+    "description": "Auto imported from components/icons/lfx-icon-card-front.vue"
+  },
+  "IconsLfxIconChart": {
+    "description": "Auto imported from components/icons/lfx-icon-chart.vue"
+  },
+  "IconsLfxIconCheckMark": {
+    "description": "Auto imported from components/icons/lfx-icon-check-mark.vue"
+  },
+  "IconsLfxIconCheckRound": {
+    "description": "Auto imported from components/icons/lfx-icon-check-round.vue"
+  },
+  "IconsLfxIconCheckboxError": {
+    "description": "Auto imported from components/icons/lfx-icon-checkbox-error.vue"
+  },
+  "IconsLfxIconCheckboxFill": {
+    "description": "Auto imported from components/icons/lfx-icon-checkbox-fill.vue"
+  },
+  "IconsLfxIconCheckbox": {
+    "description": "Auto imported from components/icons/lfx-icon-checkbox.vue"
+  },
+  "IconsLfxIconChevronDown": {
+    "description": "Auto imported from components/icons/lfx-icon-chevron-down.vue"
+  },
+  "IconsLfxIconClock": {
+    "description": "Auto imported from components/icons/lfx-icon-clock.vue"
+  },
+  "IconsLfxIconClose": {
+    "description": "Auto imported from components/icons/lfx-icon-close.vue"
+  },
+  "IconsLfxIconDelete": {
+    "description": "Auto imported from components/icons/lfx-icon-delete.vue"
+  },
+  "IconsLfxIconDoc": {
+    "description": "Auto imported from components/icons/lfx-icon-doc.vue"
+  },
+  "IconsLfxIconDocument": {
+    "description": "Auto imported from components/icons/lfx-icon-document.vue"
+  },
+  "IconsLfxIconDots": {
+    "description": "Auto imported from components/icons/lfx-icon-dots.vue"
+  },
+  "IconsLfxIconEdit": {
+    "description": "Auto imported from components/icons/lfx-icon-edit.vue"
+  },
+  "IconsLfxIconEnvelope": {
+    "description": "Auto imported from components/icons/lfx-icon-envelope.vue"
+  },
+  "IconsLfxIconErrorFill": {
+    "description": "Auto imported from components/icons/lfx-icon-error-fill.vue"
+  },
+  "IconsLfxIconError": {
+    "description": "Auto imported from components/icons/lfx-icon-error.vue"
+  },
+  "IconsLfxIconEye": {
+    "description": "Auto imported from components/icons/lfx-icon-eye.vue"
+  },
+  "IconsLfxIconFilter": {
+    "description": "Auto imported from components/icons/lfx-icon-filter.vue"
+  },
+  "IconsLfxIconFinanceCardBack": {
+    "description": "Auto imported from components/icons/lfx-icon-finance-card-back.vue"
+  },
+  "IconsLfxIconFinanceCardFront": {
+    "description": "Auto imported from components/icons/lfx-icon-finance-card-front.vue"
+  },
+  "IconsLfxIconFullscreenOff": {
+    "description": "Auto imported from components/icons/lfx-icon-fullscreen-off.vue"
+  },
+  "IconsLfxIconFullscreen": {
+    "description": "Auto imported from components/icons/lfx-icon-fullscreen.vue"
+  },
+  "IconsLfxIconGetMoney": {
+    "description": "Auto imported from components/icons/lfx-icon-get-money.vue"
+  },
+  "IconsLfxIconHelp2": {
+    "description": "Auto imported from components/icons/lfx-icon-help-2.vue"
+  },
+  "IconsLfxIconHelp": {
+    "description": "Auto imported from components/icons/lfx-icon-help.vue"
+  },
+  "IconsLfxIconInfo": {
+    "description": "Auto imported from components/icons/lfx-icon-info.vue"
+  },
+  "IconsLfxIconLink": {
+    "description": "Auto imported from components/icons/lfx-icon-link.vue"
+  },
+  "IconsLfxIconList": {
+    "description": "Auto imported from components/icons/lfx-icon-list.vue"
+  },
+  "IconsLfxIconLock": {
+    "description": "Auto imported from components/icons/lfx-icon-lock.vue"
+  },
+  "IconsLfxIconLogo": {
+    "description": "Auto imported from components/icons/lfx-icon-logo.vue"
+  },
+  "IconsLfxIconMenuCalculator": {
+    "description": "Auto imported from components/icons/lfx-icon-menu-calculator.vue"
+  },
+  "IconsLfxIconMenuCampaigns": {
+    "description": "Auto imported from components/icons/lfx-icon-menu-campaigns.vue"
+  },
+  "IconsLfxIconMenuContests": {
+    "description": "Auto imported from components/icons/lfx-icon-menu-contests.vue"
+  },
+  "IconsLfxIconMenuPrograms": {
+    "description": "Auto imported from components/icons/lfx-icon-menu-programs.vue"
+  },
+  "IconsLfxIconMenuPromo": {
+    "description": "Auto imported from components/icons/lfx-icon-menu-promo.vue"
+  },
+  "IconsLfxIconMinus2": {
+    "description": "Auto imported from components/icons/lfx-icon-minus-2.vue"
+  },
+  "IconsLfxIconMinusSquare": {
+    "description": "Auto imported from components/icons/lfx-icon-minus-square.vue"
+  },
+  "IconsLfxIconMinus": {
+    "description": "Auto imported from components/icons/lfx-icon-minus.vue"
+  },
+  "IconsLfxIconModalClose": {
+    "description": "Auto imported from components/icons/lfx-icon-modal-close.vue"
+  },
+  "IconsLfxIconModalError": {
+    "description": "Auto imported from components/icons/lfx-icon-modal-error.vue"
+  },
+  "IconsLfxIconModalSuccess": {
+    "description": "Auto imported from components/icons/lfx-icon-modal-success.vue"
+  },
+  "IconsLfxIconPause": {
+    "description": "Auto imported from components/icons/lfx-icon-pause.vue"
+  },
+  "IconsLfxIconPlus2": {
+    "description": "Auto imported from components/icons/lfx-icon-plus-2.vue"
+  },
+  "IconsLfxIconPlusSquare": {
+    "description": "Auto imported from components/icons/lfx-icon-plus-square.vue"
+  },
+  "IconsLfxIconPlus": {
+    "description": "Auto imported from components/icons/lfx-icon-plus.vue"
+  },
+  "IconsLfxIconRadioError": {
+    "description": "Auto imported from components/icons/lfx-icon-radio-error.vue"
+  },
+  "IconsLfxIconRadioFill": {
+    "description": "Auto imported from components/icons/lfx-icon-radio-fill.vue"
+  },
+  "IconsLfxIconRadio": {
+    "description": "Auto imported from components/icons/lfx-icon-radio.vue"
+  },
+  "IconsLfxIconReferrals": {
+    "description": "Auto imported from components/icons/lfx-icon-referrals.vue"
+  },
+  "IconsLfxIconRepeat": {
+    "description": "Auto imported from components/icons/lfx-icon-repeat.vue"
+  },
+  "IconsLfxIconSelfie": {
+    "description": "Auto imported from components/icons/lfx-icon-selfie.vue"
+  },
+  "IconsLfxIconSettings2": {
+    "description": "Auto imported from components/icons/lfx-icon-settings-2.vue"
+  },
+  "IconsLfxIconSettings": {
+    "description": "Auto imported from components/icons/lfx-icon-settings.vue"
+  },
+  "IconsLfxIconSorting": {
+    "description": "Auto imported from components/icons/lfx-icon-sorting.vue"
+  },
+  "IconsLfxIconStarEmpty": {
+    "description": "Auto imported from components/icons/lfx-icon-star-empty.vue"
+  },
+  "IconsLfxIconStar": {
+    "description": "Auto imported from components/icons/lfx-icon-star.vue"
+  },
+  "IconsLfxIconSuccessFill": {
+    "description": "Auto imported from components/icons/lfx-icon-success-fill.vue"
+  },
+  "IconsLfxIconSuccess": {
+    "description": "Auto imported from components/icons/lfx-icon-success.vue"
+  },
+  "IconsLfxIconSwitch2Off": {
+    "description": "Auto imported from components/icons/lfx-icon-switch-2-off.vue"
+  },
+  "IconsLfxIconSwitch2On": {
+    "description": "Auto imported from components/icons/lfx-icon-switch-2-on.vue"
+  },
+  "IconsLfxIconSwitchOff": {
+    "description": "Auto imported from components/icons/lfx-icon-switch-off.vue"
+  },
+  "IconsLfxIconSwitchOn": {
+    "description": "Auto imported from components/icons/lfx-icon-switch-on.vue"
+  },
+  "IconsLfxIconThreeDots": {
+    "description": "Auto imported from components/icons/lfx-icon-three-dots.vue"
+  },
+  "IconsLfxIconTicket": {
+    "description": "Auto imported from components/icons/lfx-icon-ticket.vue"
+  },
+  "IconsLfxIconTileAddStar": {
+    "description": "Auto imported from components/icons/lfx-icon-tile-add-star.vue"
+  },
+  "IconsLfxIconTiles": {
+    "description": "Auto imported from components/icons/lfx-icon-tiles.vue"
+  },
+  "IconsLfxIconTwSignal": {
+    "description": "Auto imported from components/icons/lfx-icon-tw-signal.vue"
+  },
+  "IconsLfxIconTwitterWatcher": {
+    "description": "Auto imported from components/icons/lfx-icon-twitter-watcher.vue"
+  },
+  "IconsLfxIconWaiting": {
+    "description": "Auto imported from components/icons/lfx-icon-waiting.vue"
+  },
+  "IconsLfxIconWinner": {
+    "description": "Auto imported from components/icons/lfx-icon-winner.vue"
+  },
+  "MetatraderInternalTransfer": {
+    "description": "Auto imported from components/metatrader/metatraderInternalTransfer.vue"
+  },
+  "MetatraderMainAccount": {
+    "description": "Auto imported from components/metatrader/metatraderMainAccount.vue"
+  },
+  "MetatraderTradingAccounts": {
+    "description": "Auto imported from components/metatrader/metatraderTradingAccounts.vue"
+  },
+  "Modal": {
+    "description": "Auto imported from components/modal/modal.vue"
+  },
+  "PartnersPromo": {
+    "description": "Auto imported from components/partners/promo.vue"
+  },
+  "PopupTradeClose": {
+    "description": "Auto imported from components/popup/popup-trade-close.vue"
+  },
+  "PopupTradeOpen": {
+    "description": "Auto imported from components/popup/popup-trade-open.vue"
+  },
+  "Popup": {
+    "description": "Auto imported from components/popup/popup.vue"
+  },
+  "PopupPreloader": {
+    "description": "Auto imported from components/popup/preloader.vue"
+  },
+  "PopupSearchPopup": {
+    "description": "Auto imported from components/popup/search-popup.vue"
+  },
+  "SidebarsLfxSidebarBottom": {
+    "description": "Auto imported from components/sidebars/lfx-sidebar-bottom.vue"
+  },
+  "SidebarsLfxSidebarChat": {
+    "description": "Auto imported from components/sidebars/lfx-sidebar-chat.vue"
+  },
+  "SidebarsLfxSidebarMenu": {
+    "description": "Auto imported from components/sidebars/lfx-sidebar-menu.vue"
+  },
+  "TablesLfxTableAnalyticsSignals": {
+    "description": "Auto imported from components/tables/lfx-table-analytics-signals.vue"
+  },
+  "TablesLfxTableBottomSidebar": {
+    "description": "Auto imported from components/tables/lfx-table-bottom-sidebar.vue"
+  },
+  "TablesLfxTableContestParticipants": {
+    "description": "Auto imported from components/tables/lfx-table-contest-participants.vue"
+  },
+  "TablesLfxTableContestWinners": {
+    "description": "Auto imported from components/tables/lfx-table-contest-winners.vue"
+  },
+  "TablesLfxTableCopiersHistory": {
+    "description": "Auto imported from components/tables/lfx-table-copiers-history.vue"
+  },
+  "TablesLfxTableCopiersPartner": {
+    "description": "Auto imported from components/tables/lfx-table-copiers-partner.vue"
+  },
+  "TablesLfxTableCopiers": {
+    "description": "Auto imported from components/tables/lfx-table-copiers.vue"
+  },
+  "TablesLfxTablePartnerCommissions": {
+    "description": "Auto imported from components/tables/lfx-table-partner-commissions.vue"
+  },
+  "TablesLfxTableTraderHistory": {
+    "description": "Auto imported from components/tables/lfx-table-trader-history.vue"
+  },
+  "TablesLfxTableTraderPortfolio": {
+    "description": "Auto imported from components/tables/lfx-table-trader-portfolio.vue"
+  },
+  "TablesLfxTableTraders": {
+    "description": "Auto imported from components/tables/lfx-table-traders.vue"
+  },
+  "TablesLfxTableTradesHistory": {
+    "description": "Auto imported from components/tables/lfx-table-trades-history.vue"
+  },
+  "TablesLfxTableTrades": {
+    "description": "Auto imported from components/tables/lfx-table-trades.vue"
+  },
+  "TablesLfxTableTrading": {
+    "description": "Auto imported from components/tables/lfx-table-trading.vue"
+  },
+  "TablesLfxTableTwitterWatcher": {
+    "description": "Auto imported from components/tables/lfx-table-twitter-watcher.vue"
+  },
+  "TradingSettings": {
+    "description": "Auto imported from components/trading/settings.vue"
+  },
+  "AuxLfxCalendarPriority": {
+    "description": "Auto imported from components/_aux/lfx-calendar-priority.vue"
+  },
+  "AuxLfxCircleProgress": {
+    "description": "Auto imported from components/_aux/lfx-circle-progress.vue"
+  },
+  "AuxLfxCounterInput": {
+    "description": "Auto imported from components/_aux/lfx-counter-input.vue"
+  },
+  "AuxLfxCountriesLogo": {
+    "description": "Auto imported from components/_aux/lfx-countries-logo.vue"
+  },
+  "AuxLfxFilterSelect": {
+    "description": "Auto imported from components/_aux/lfx-filter-select.vue"
+  },
+  "AuxLfxInputBubble": {
+    "description": "Auto imported from components/_aux/lfx-input-bubble.vue"
+  },
+  "AuxLfxMenuLinks": {
+    "description": "Auto imported from components/_aux/lfx-menu-links.vue"
+  },
+  "AuxLfxMenu": {
+    "description": "Auto imported from components/_aux/lfx-menu.vue"
+  },
+  "AuxLfxSignalIndicator": {
+    "description": "Auto imported from components/_aux/lfx-signal-indicator.vue"
+  },
+  "AuxLfxSwitch": {
+    "description": "Auto imported from components/_aux/lfx-switch.vue"
+  },
+  "AuxLfxSymbolCountry": {
+    "description": "Auto imported from components/_aux/lfx-symbol-country.vue"
+  },
+  "AuxLfxSymbolTradingCard": {
+    "description": "Auto imported from components/_aux/lfx-symbol-trading-card.vue"
+  },
+  "AuxLfxSymbol": {
+    "description": "Auto imported from components/_aux/lfx-symbol.vue"
+  },
+  "ChartTradersSettings": {
+    "description": "Auto imported from components/chart/traders/settings.vue"
+  },
+  "ChartTradingSettings": {
+    "description": "Auto imported from components/chart/trading/settings.vue"
+  },
+  "ChatIcon": {
+    "description": "Auto imported from components/chat/components/chatIcon.vue"
+  },
+  "ChatPopup": {
+    "description": "Auto imported from components/chat/components/chatPopup.vue"
+  },
+  "ChatSearch": {
+    "description": "Auto imported from components/chat/components/chatSearch.vue"
+  },
+  "ChatTabList": {
+    "description": "Auto imported from components/chat/components/chatTabList.vue"
+  },
+  "ChatTabs": {
+    "description": "Auto imported from components/chat/components/chatTabs.vue"
+  },
+  "ChatIconsLfxIconAttach": {
+    "description": "Auto imported from components/chat/icons/lfx-icon-attach.vue"
+  },
+  "ChatIconsLfxIconBack": {
+    "description": "Auto imported from components/chat/icons/lfx-icon-back.vue"
+  },
+  "ChatIconsLfxIconEmoji": {
+    "description": "Auto imported from components/chat/icons/lfx-icon-emoji.vue"
+  },
+  "ChatIconsLfxIconSend": {
+    "description": "Auto imported from components/chat/icons/lfx-icon-send.vue"
+  },
+  "HeaderIconsLfxIconAdmin": {
+    "description": "Auto imported from components/header/icons/lfx-icon-admin.vue"
+  },
+  "HeaderIconsLfxIconChat1": {
+    "description": "Auto imported from components/header/icons/lfx-icon-chat-1.vue"
+  },
+  "HeaderIconsLfxIconChat": {
+    "description": "Auto imported from components/header/icons/lfx-icon-chat.vue"
+  },
+  "HeaderIconsLfxIconLogoFull": {
+    "description": "Auto imported from components/header/icons/lfx-icon-logo-full.vue"
+  },
+  "HeaderIconsLfxIconLogoLitefinanceFull": {
+    "description": "Auto imported from components/header/icons/lfx-icon-logo-litefinance-full.vue"
+  },
+  "HeaderIconsLfxIconLogoLitefinance": {
+    "description": "Auto imported from components/header/icons/lfx-icon-logo-litefinance.vue"
+  },
+  "HeaderIconsLfxIconLogo": {
+    "description": "Auto imported from components/header/icons/lfx-icon-logo.vue"
+  },
+  "HeaderIconsLfxIconLogout": {
+    "description": "Auto imported from components/header/icons/lfx-icon-logout.vue"
+  },
+  "HeaderIconsLfxIconMenu": {
+    "description": "Auto imported from components/header/icons/lfx-icon-menu.vue"
+  },
+  "ModalFieldsFieldCheckboxRadio": {
+    "description": "Auto imported from components/modal/fields/field-checkbox-radio.vue"
+  },
+  "ModalFieldsFieldCheckbox": {
+    "description": "Auto imported from components/modal/fields/field-checkbox.vue"
+  },
+  "ModalFieldsFieldCountries": {
+    "description": "Auto imported from components/modal/fields/field-countries.vue"
+  },
+  "ModalFieldsFieldFile": {
+    "description": "Auto imported from components/modal/fields/field-file.vue"
+  },
+  "ModalFieldsFieldNumeric": {
+    "description": "Auto imported from components/modal/fields/field-numeric.vue"
+  },
+  "ModalFieldsFieldPassword": {
+    "description": "Auto imported from components/modal/fields/field-password.vue"
+  },
+  "ModalFieldsFieldSelectBubble": {
+    "description": "Auto imported from components/modal/fields/field-select-bubble.vue"
+  },
+  "ModalFieldsFieldSelectCheckbox": {
+    "description": "Auto imported from components/modal/fields/field-select-checkbox.vue"
+  },
+  "ModalFieldsFieldSelectRadio": {
+    "description": "Auto imported from components/modal/fields/field-select-radio.vue"
+  },
+  "ModalFieldsFieldSelect": {
+    "description": "Auto imported from components/modal/fields/field-select.vue"
+  },
+  "ModalFieldsFieldSlider": {
+    "description": "Auto imported from components/modal/fields/field-slider.vue"
+  },
+  "ModalFieldsFieldSwitch": {
+    "description": "Auto imported from components/modal/fields/field-switch.vue"
+  },
+  "ModalFieldsFieldTextBubble": {
+    "description": "Auto imported from components/modal/fields/field-text-bubble.vue"
+  },
+  "ModalFieldsFieldText": {
+    "description": "Auto imported from components/modal/fields/field-text.vue"
+  },
+  "ModalFieldsFieldTextarea": {
+    "description": "Auto imported from components/modal/fields/field-textarea.vue"
+  },
+  "ModalFormsFormBubble": {
+    "description": "Auto imported from components/modal/forms/form-bubble.vue"
+  },
+  "ModalFormsFormCopyAction": {
+    "description": "Auto imported from components/modal/forms/form-copy-action.vue"
+  },
+  "ModalFormsFormEditAddress": {
+    "description": "Auto imported from components/modal/forms/form-edit-address.vue"
+  },
+  "ModalFormsFormEditEmail": {
+    "description": "Auto imported from components/modal/forms/form-edit-email.vue"
+  },
+  "ModalFormsFormEditIdentity": {
+    "description": "Auto imported from components/modal/forms/form-edit-identity.vue"
+  },
+  "ModalFormsFormEditPhone": {
+    "description": "Auto imported from components/modal/forms/form-edit-phone.vue"
+  },
+  "ModalFormsFormFinanceAffiliateTransfer": {
+    "description": "Auto imported from components/modal/forms/form-finance-affiliate-transfer.vue"
+  },
+  "ModalFormsFormFinanceDepositCard": {
+    "description": "Auto imported from components/modal/forms/form-finance-deposit-card.vue"
+  },
+  "ModalFormsFormFinanceDepositModal": {
+    "description": "Auto imported from components/modal/forms/form-finance-deposit-modal.vue"
+  },
+  "ModalFormsFormFinanceDepositRequest": {
+    "description": "Auto imported from components/modal/forms/form-finance-deposit-request.vue"
+  },
+  "ModalFormsFormFinanceHistory": {
+    "description": "Auto imported from components/modal/forms/form-finance-history.vue"
+  },
+  "ModalFormsFormFinanceWithdrawalModal": {
+    "description": "Auto imported from components/modal/forms/form-finance-withdrawal-modal.vue"
+  },
+  "ModalFormsFormFinanceWithdrawalRequest": {
+    "description": "Auto imported from components/modal/forms/form-finance-withdrawal-request.vue"
+  },
+  "ModalFormsFormLogin": {
+    "description": "Auto imported from components/modal/forms/form-login.vue"
+  },
+  "ModalFormsFormMtVpsBuy": {
+    "description": "Auto imported from components/modal/forms/form-mt-vps-buy.vue"
+  },
+  "ModalFormsFormNotifications": {
+    "description": "Auto imported from components/modal/forms/form-notifications.vue"
+  },
+  "ModalFormsFormPartnersCalculator": {
+    "description": "Auto imported from components/modal/forms/form-partners-calculator.vue"
+  },
+  "ModalFormsFormPartnersCreateCompany": {
+    "description": "Auto imported from components/modal/forms/form-partners-create-company.vue"
+  },
+  "ModalFormsFormPartnersEditCompany": {
+    "description": "Auto imported from components/modal/forms/form-partners-edit-company.vue"
+  },
+  "ModalFormsFormPartnersMakeApp": {
+    "description": "Auto imported from components/modal/forms/form-partners-make-app.vue"
+  },
+  "ModalFormsFormPartnersRegRep": {
+    "description": "Auto imported from components/modal/forms/form-partners-reg-rep.vue"
+  },
+  "ModalFormsFormProfileAbout": {
+    "description": "Auto imported from components/modal/forms/form-profile-about.vue"
+  },
+  "ModalFormsFormProfileUsername": {
+    "description": "Auto imported from components/modal/forms/form-profile-username.vue"
+  },
+  "ModalFormsFormQuestionnaireEu": {
+    "description": "Auto imported from components/modal/forms/form-questionnaire-eu.vue"
+  },
+  "ModalFormsFormQuestionnaireTrader": {
+    "description": "Auto imported from components/modal/forms/form-questionnaire-trader.vue"
+  },
+  "ModalFormsFormRegistration": {
+    "description": "Auto imported from components/modal/forms/form-registration.vue"
+  },
+  "ModalFormsFormStandard": {
+    "description": "Auto imported from components/modal/forms/form-standard.vue"
+  },
+  "ModalFormsFormTwitterWatcher": {
+    "description": "Auto imported from components/modal/forms/form-twitter-watcher.vue"
+  },
+  "ModalFormsFormVerificationPep": {
+    "description": "Auto imported from components/modal/forms/form-verification-pep.vue"
+  },
+  "ModalFormsMainForm": {
+    "description": "Auto imported from components/modal/forms/main-form.vue"
+  },
+  "PopupFormsMainPopup": {
+    "description": "Auto imported from components/popup/forms/main-popup.vue"
+  },
+  "PopupAnalyticsCalendarEvent": {
+    "description": "Auto imported from components/popup/forms/popup-analytics-calendar-event.vue"
+  },
+  "PopupAnalyticsCalendarFilter": {
+    "description": "Auto imported from components/popup/forms/popup-analytics-calendar-filter.vue"
+  },
+  "PopupAnalyticsFilter": {
+    "description": "Auto imported from components/popup/forms/popup-analytics-filter.vue"
+  },
+  "PopupAnalyticsSignalsFilter": {
+    "description": "Auto imported from components/popup/forms/popup-analytics-signals-filter.vue"
+  },
+  "PopupBringFriend": {
+    "description": "Auto imported from components/popup/forms/popup-bring-friend.vue"
+  },
+  "PopupChatImage": {
+    "description": "Auto imported from components/popup/forms/popup-chat-image.vue"
+  },
+  "PopupCopiersHistory": {
+    "description": "Auto imported from components/popup/forms/popup-copiers-history.vue"
+  },
+  "PopupCopiersPartnerEdit": {
+    "description": "Auto imported from components/popup/forms/popup-copiers-partner-edit.vue"
+  },
+  "PopupCopiers": {
+    "description": "Auto imported from components/popup/forms/popup-copiers.vue"
+  },
+  "PopupDemoReal": {
+    "description": "Auto imported from components/popup/forms/popup-demo-real.vue"
+  },
+  "PopupEducationWebinarRegistration": {
+    "description": "Auto imported from components/popup/forms/popup-education-webinar-registration.vue"
+  },
+  "PopupEducationWebinar": {
+    "description": "Auto imported from components/popup/forms/popup-education-webinar.vue"
+  },
+  "PopupEmailAuth": {
+    "description": "Auto imported from components/popup/forms/popup-email-auth.vue"
+  },
+  "PopupFinanceCancel": {
+    "description": "Auto imported from components/popup/forms/popup-finance-cancel.vue"
+  },
+  "PopupFinanceDeleteWallet": {
+    "description": "Auto imported from components/popup/forms/popup-finance-delete-wallet.vue"
+  },
+  "PopupFinanceDepositBank": {
+    "description": "Auto imported from components/popup/forms/popup-finance-deposit-bank.vue"
+  },
+  "PopupFinanceDepositCrypto": {
+    "description": "Auto imported from components/popup/forms/popup-finance-deposit-crypto.vue"
+  },
+  "PopupFinanceDepositForm": {
+    "description": "Auto imported from components/popup/forms/popup-finance-deposit-form.vue"
+  },
+  "PopupFinanceDepositMessage": {
+    "description": "Auto imported from components/popup/forms/popup-finance-deposit-message.vue"
+  },
+  "PopupFinanceRepeat": {
+    "description": "Auto imported from components/popup/forms/popup-finance-repeat.vue"
+  },
+  "PopupFinanceWithdrawalInfo": {
+    "description": "Auto imported from components/popup/forms/popup-finance-withdrawal-info.vue"
+  },
+  "PopupGoogleAuth": {
+    "description": "Auto imported from components/popup/forms/popup-google-auth.vue"
+  },
+  "PopupLanguage": {
+    "description": "Auto imported from components/popup/forms/popup-language.vue"
+  },
+  "PopupMtResetStatistics": {
+    "description": "Auto imported from components/popup/forms/popup-mt-reset-statistics.vue"
+  },
+  "PopupMtSetPrimary": {
+    "description": "Auto imported from components/popup/forms/popup-mt-set-primary.vue"
+  },
+  "PopupMtSettings": {
+    "description": "Auto imported from components/popup/forms/popup-mt-settings.vue"
+  },
+  "PopupPartnersCampaignsList": {
+    "description": "Auto imported from components/popup/forms/popup-partners-campaigns-list.vue"
+  },
+  "PopupPartnersCommissionHold": {
+    "description": "Auto imported from components/popup/forms/popup-partners-commission-hold.vue"
+  },
+  "PopupPartnersCurrentReferral": {
+    "description": "Auto imported from components/popup/forms/popup-partners-current-referral.vue"
+  },
+  "PopupPartnersHoldInformer": {
+    "description": "Auto imported from components/popup/forms/popup-partners-hold-informer.vue"
+  },
+  "PopupPartnersLuckyTicketContestAlgorithm": {
+    "description": "Auto imported from components/popup/forms/popup-partners-lucky-ticket-contest-algorithm.vue"
+  },
+  "PopupPartnersPromoCampaignsList": {
+    "description": "Auto imported from components/popup/forms/popup-partners-promo-campaigns-list.vue"
+  },
+  "PopupPartnersRefTableSettings": {
+    "description": "Auto imported from components/popup/forms/popup-partners-ref-table-settings.vue"
+  },
+  "PopupPartnersTableSettings": {
+    "description": "Auto imported from components/popup/forms/popup-partners-table-settings.vue"
+  },
+  "PopupRegisterYet": {
+    "description": "Auto imported from components/popup/forms/popup-register-yet.vue"
+  },
+  "PopupRegistrationWarning": {
+    "description": "Auto imported from components/popup/forms/popup-registration-warning.vue"
+  },
+  "PopupSmsAuth": {
+    "description": "Auto imported from components/popup/forms/popup-sms-auth.vue"
+  },
+  "PopupSuccessfulPartnerConditions": {
+    "description": "Auto imported from components/popup/forms/popup-successful-partner-conditions.vue"
+  },
+  "PopupSuccessfulPartnerParticipate": {
+    "description": "Auto imported from components/popup/forms/popup-successful-partner-participate.vue"
+  },
+  "PopupTraderHistoryInvestment": {
+    "description": "Auto imported from components/popup/forms/popup-trader-history-investment.vue"
+  },
+  "PopupTraderHistoryTrade": {
+    "description": "Auto imported from components/popup/forms/popup-trader-history-trade.vue"
+  },
+  "PopupTraderInvestment": {
+    "description": "Auto imported from components/popup/forms/popup-trader-investment.vue"
+  },
+  "PopupTraderTrade": {
+    "description": "Auto imported from components/popup/forms/popup-trader-trade.vue"
+  },
+  "PopupTradersCardDisplay": {
+    "description": "Auto imported from components/popup/forms/popup-traders-card-display.vue"
+  },
+  "PopupTradersCardWarning": {
+    "description": "Auto imported from components/popup/forms/popup-traders-card-warning.vue"
+  },
+  "PopupTradersOpenTrade": {
+    "description": "Auto imported from components/popup/forms/popup-traders-open-trade.vue"
+  },
+  "PopupTradersPeriods": {
+    "description": "Auto imported from components/popup/forms/popup-traders-periods.vue"
+  },
+  "PopupTradersRanges": {
+    "description": "Auto imported from components/popup/forms/popup-traders-ranges.vue"
+  },
+  "PopupTradersSorting": {
+    "description": "Auto imported from components/popup/forms/popup-traders-sorting.vue"
+  },
+  "PopupTradesHistoryInvestment": {
+    "description": "Auto imported from components/popup/forms/popup-trades-history-investment.vue"
+  },
+  "PopupTradesHistoryTrade": {
+    "description": "Auto imported from components/popup/forms/popup-trades-history-trade.vue"
+  },
+  "PopupTradesInvestmentChange": {
+    "description": "Auto imported from components/popup/forms/popup-trades-investment-change.vue"
+  },
+  "PopupTradesInvestment": {
+    "description": "Auto imported from components/popup/forms/popup-trades-investment.vue"
+  },
+  "PopupTradesTradeChange": {
+    "description": "Auto imported from components/popup/forms/popup-trades-trade-change.vue"
+  },
+  "PopupTradesTrade": {
+    "description": "Auto imported from components/popup/forms/popup-trades-trade.vue"
+  },
+  "PopupTradingCardDisplay": {
+    "description": "Auto imported from components/popup/forms/popup-trading-card-display.vue"
+  },
+  "PopupTradingCardWarning": {
+    "description": "Auto imported from components/popup/forms/popup-trading-card-warning.vue"
+  },
+  "PopupTradingOpenTrade": {
+    "description": "Auto imported from components/popup/forms/popup-trading-open-trade.vue"
+  },
+  "PopupTradingPeriods": {
+    "description": "Auto imported from components/popup/forms/popup-trading-periods.vue"
+  },
+  "PopupTradingSorting": {
+    "description": "Auto imported from components/popup/forms/popup-trading-sorting.vue"
+  },
+  "PopupVerificationBankCard": {
+    "description": "Auto imported from components/popup/forms/popup-verification-bank-card.vue"
+  },
+  "PopupVerificationChangeEmail": {
+    "description": "Auto imported from components/popup/forms/popup-verification-change-email.vue"
+  },
+  "PopupVerificationChangePhone": {
+    "description": "Auto imported from components/popup/forms/popup-verification-change-phone.vue"
+  },
+  "PopupVerificationEditAddress": {
+    "description": "Auto imported from components/popup/forms/popup-verification-edit-address.vue"
+  },
+  "PopupVerificationEditIdentity": {
+    "description": "Auto imported from components/popup/forms/popup-verification-edit-identity.vue"
+  },
+  "PopupVerificationIslamic": {
+    "description": "Auto imported from components/popup/forms/popup-verification-islamic.vue"
+  },
+  "PopupVerificationPep": {
+    "description": "Auto imported from components/popup/forms/popup-verification-pep.vue"
+  },
+  "PopupVerificationRiskAcceptance": {
+    "description": "Auto imported from components/popup/forms/popup-verification-risk-acceptance.vue"
+  },
+  "ProfileVerificationModalIslamic": {
+    "description": "Auto imported from components/profile/verification/profileVerificationModalIslamic.vue"
+  },
+  "ProfileVerificationModalPhoneVerify": {
+    "description": "Auto imported from components/profile/verification/profileVerificationModalPhoneVerify.vue"
+  },
+  "SidebarsIconsLfxIconAnalytics": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-analytics.vue"
+  },
+  "SidebarsIconsLfxIconBets": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-bets.vue"
+  },
+  "SidebarsIconsLfxIconDeposit": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-deposit.vue"
+  },
+  "SidebarsIconsLfxIconEducation": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-education.vue"
+  },
+  "SidebarsIconsLfxIconFinance": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-finance.vue"
+  },
+  "SidebarsIconsLfxIconMetatrader": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-metatrader.vue"
+  },
+  "SidebarsIconsLfxIconPartner": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-partner.vue"
+  },
+  "SidebarsIconsLfxIconProfile": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-profile.vue"
+  },
+  "SidebarsIconsLfxIconTrade": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-trade.vue"
+  },
+  "SidebarsIconsLfxIconTraders": {
+    "description": "Auto imported from components/sidebars/icons/lfx-icon-traders.vue"
+  },
+  "TablesBottomSidebarHeadBottomSidebar": {
+    "description": "Auto imported from components/tables/bottom-sidebar/head-bottom-sidebar.vue"
+  },
+  "TablesBottomSidebarRowBottomSidebar": {
+    "description": "Auto imported from components/tables/bottom-sidebar/row-bottom-sidebar.vue"
+  },
+  "TablesBottomSidebarTableBottomSidebar": {
+    "description": "Auto imported from components/tables/bottom-sidebar/table-bottom-sidebar.vue"
+  },
+  "TablesProfileTradesHeadProfileTrades": {
+    "description": "Auto imported from components/tables/profile-trades/head-profile-trades.vue"
+  },
+  "TablesProfileTradesRowProfileTrades": {
+    "description": "Auto imported from components/tables/profile-trades/row-profile-trades.vue"
+  },
+  "TablesProfileTradesTableProfileTrades": {
+    "description": "Auto imported from components/tables/profile-trades/table-profile-trades.vue"
+  },
+  "TradersCardButtons": {
+    "description": "Auto imported from components/traders/card/buttons.vue"
+  },
+  "TradersCard": {
+    "description": "Auto imported from components/traders/card/card.vue"
+  },
+  "TradersTraderChart": {
+    "description": "Auto imported from components/traders/trader/chart.vue"
+  },
+  "TradersTraderHistory": {
+    "description": "Auto imported from components/traders/trader/history.vue"
+  },
+  "TradersTraderPortfolio": {
+    "description": "Auto imported from components/traders/trader/portfolio.vue"
+  },
+  "TradersTraderProfile": {
+    "description": "Auto imported from components/traders/trader/profile.vue"
+  },
+  "TradingCardButtons": {
+    "description": "Auto imported from components/trading/card/buttons.vue"
+  },
+  "TradingCard": {
+    "description": "Auto imported from components/trading/card/card.vue"
+  },
+  "TradingInstrumentChart": {
+    "description": "Auto imported from components/trading/instrument/chart.vue"
+  },
+  "TradingInstrument": {
+    "description": "Auto imported from components/trading/instrument/instrument.vue"
+  },
+  "ChatAddRoom": {
+    "description": "Auto imported from components/chat/components/addRoom/chatAddRoom.vue"
+  },
+  "ChatAddRoomContainer": {
+    "description": "Auto imported from components/chat/components/addRoom/chatAddRoomContainer.vue"
+  },
+  "ChatCurrentRoomComment": {
+    "description": "Auto imported from components/chat/components/currentRoom/chatCurrentRoomComment.vue"
+  },
+  "ChatCurrentRoomEmojis": {
+    "description": "Auto imported from components/chat/components/currentRoom/chatCurrentRoomEmojis.vue"
+  },
+  "ChatCurrentRoomMenu": {
+    "description": "Auto imported from components/chat/components/currentRoom/chatCurrentRoomMenu.vue"
+  },
+  "ChatCurrentRoomMessageEmoji": {
+    "description": "Auto imported from components/chat/components/currentRoom/chatCurrentRoomMessageEmoji.vue"
+  },
+  "ChatCurrentRoomMessages": {
+    "description": "Auto imported from components/chat/components/currentRoom/chatCurrentRoomMessages.vue"
+  },
+  "ChatComponentsCurrentRoom": {
+    "description": "Auto imported from components/chat/components/currentRoom/index.vue"
+  },
+  "ChatIconsRatingLfxIconRatingBad": {
+    "description": "Auto imported from components/chat/icons/rating/lfx-icon-rating-bad.vue"
+  },
+  "ChatIconsRatingLfxIconRatingGood": {
+    "description": "Auto imported from components/chat/icons/rating/lfx-icon-rating-good.vue"
+  },
+  "ChatIconsRatingLfxIconRatingNeutral": {
+    "description": "Auto imported from components/chat/icons/rating/lfx-icon-rating-neutral.vue"
+  },
+  "ModalFieldsSelectStandard": {
+    "description": "Auto imported from components/modal/fields/select/select-standard.vue"
+  },
+  "ModalFieldsSelectTransfer": {
+    "description": "Auto imported from components/modal/fields/select/select-transfer.vue"
+  },
+  "ModalFieldsSwitchLfxSwitchOffRtl": {
+    "description": "Auto imported from components/modal/fields/switch/lfx-switch-off-rtl.vue"
+  },
+  "ModalFieldsSwitchLfxSwitchOff": {
+    "description": "Auto imported from components/modal/fields/switch/lfx-switch-off.vue"
+  },
+  "ModalFieldsSwitchLfxSwitchOnRtl": {
+    "description": "Auto imported from components/modal/fields/switch/lfx-switch-on-rtl.vue"
+  },
+  "ModalFieldsSwitchLfxSwitchOn": {
+    "description": "Auto imported from components/modal/fields/switch/lfx-switch-on.vue"
+  },
+  "ModalFormsQuestionnaireStepEight": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-eight.vue"
+  },
+  "ModalFormsQuestionnaireStepFive": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-five.vue"
+  },
+  "ModalFormsQuestionnaireStepFour": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-four.vue"
+  },
+  "ModalFormsQuestionnaireStepNine": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-nine.vue"
+  },
+  "ModalFormsQuestionnaireStepOne": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-one.vue"
+  },
+  "ModalFormsQuestionnaireStepSeven": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-seven.vue"
+  },
+  "ModalFormsQuestionnaireStepSix": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-six.vue"
+  },
+  "ModalFormsQuestionnaireStepThree": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-three.vue"
+  },
+  "ModalFormsQuestionnaireStepTwo": {
+    "description": "Auto imported from components/modal/forms/questionnaire-steps/questionnaire-step-two.vue"
+  },
+  "ModalFormsQuestionnaireTraderStepOne": {
+    "description": "Auto imported from components/modal/forms/questionnaire-trader-steps/questionnaire-trader-step-one.vue"
+  },
+  "ModalFormsQuestionnaireTraderStepTwo": {
+    "description": "Auto imported from components/modal/forms/questionnaire-trader-steps/questionnaire-trader-step-two.vue"
+  },
+  "SidebarsComponentsBottomLfxSidebarBottomInfoValue": {
+    "description": "Auto imported from components/sidebars/components/bottom/lfx-sidebar-bottom-info-value.vue"
+  },
+  "SidebarsComponentsBottomLfxSidebarBottomInfo": {
+    "description": "Auto imported from components/sidebars/components/bottom/lfx-sidebar-bottom-info.vue"
+  },
+  "SidebarsComponentsBottomLfxSidebarBottomPartnerInfo": {
+    "description": "Auto imported from components/sidebars/components/bottom/lfx-sidebar-bottom-partner-info.vue"
+  },
+  "SidebarsComponentsBottomLfxSidebarBottomPortfolio": {
+    "description": "Auto imported from components/sidebars/components/bottom/lfx-sidebar-bottom-portfolio.vue"
+  },
+  "TradingInstrumentAnalytics": {
+    "description": "Auto imported from components/trading/instrument/analytics/analytics.vue"
+  },
+  "TradingInstrumentInformation": {
+    "description": "Auto imported from components/trading/instrument/information/information.vue"
+  },
+  "SidebarsComponentsBottomMobileLfxSidebarBottomMobileInfoValue": {
+    "description": "Auto imported from components/sidebars/components/bottom/mobile/lfx-sidebar-bottom-mobile-info-value.vue"
+  },
+  "SidebarsComponentsBottomMobileLfxSidebarBottomMobileInfo": {
+    "description": "Auto imported from components/sidebars/components/bottom/mobile/lfx-sidebar-bottom-mobile-info.vue"
+  },
+  "SidebarsComponentsBottomMobileLfxSidebarBottomMobilePartnerInfo": {
+    "description": "Auto imported from components/sidebars/components/bottom/mobile/lfx-sidebar-bottom-mobile-partner-info.vue"
+  },
+  "SidebarsComponentsBottomMobileLfxSidebarBottomMobilePortfolio": {
+    "description": "Auto imported from components/sidebars/components/bottom/mobile/lfx-sidebar-bottom-mobile-portfolio.vue"
+  },
+  "TradingInstrumentAnalyticsComponentsLfxIndicator0": {
+    "description": "Auto imported from components/trading/instrument/analytics/components/lfx-indicator-0.vue"
+  },
+  "TradingInstrumentAnalyticsComponentsLfxIndicator1": {
+    "description": "Auto imported from components/trading/instrument/analytics/components/lfx-indicator-1.vue"
+  },
+  "TradingInstrumentAnalyticsComponentsLfxIndicator2": {
+    "description": "Auto imported from components/trading/instrument/analytics/components/lfx-indicator-2.vue"
+  },
+  "TradingInstrumentAnalyticsComponentsLfxIndicator3": {
+    "description": "Auto imported from components/trading/instrument/analytics/components/lfx-indicator-3.vue"
+  },
+  "TradingInstrumentAnalyticsComponentsLfxIndicatorMinus1": {
+    "description": "Auto imported from components/trading/instrument/analytics/components/lfx-indicator-minus-1.vue"
+  },
+  "TradingInstrumentAnalyticsComponentsLfxIndicatorMinus2": {
+    "description": "Auto imported from components/trading/instrument/analytics/components/lfx-indicator-minus-2.vue"
+  },
+  "TradingInstrumentAnalyticsComponentsLfxIndicatorMinus3": {
+    "description": "Auto imported from components/trading/instrument/analytics/components/lfx-indicator-minus-3.vue"
+  },
+  "TradingInstrumentInformationComponentsAdditional": {
+    "description": "Auto imported from components/trading/instrument/information/components/additional.vue"
+  },
+  "TradingInstrumentInformationComponentsGeneral": {
+    "description": "Auto imported from components/trading/instrument/information/components/general.vue"
+  },
+  "TradingInstrumentInformationComponentsSchedule": {
+    "description": "Auto imported from components/trading/instrument/information/components/schedule.vue"
+  }
+}

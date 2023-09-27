@@ -1,0 +1,242 @@
+.analytics {
+  display: flex;
+  flex-direction: column;
+
+  &-newsline {
+    display: flex;
+    flex-direction: column;
+    max-width: 66%;
+    padding: 0 30px;
+    margin-top: 10px;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 100%;
+    }
+
+    &-date {
+      font-size: 20px;
+      color: $dark-primary;
+      margin-bottom: 10px;
+    }
+
+    &-news {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid $light-gray;
+        user-select: none;
+        cursor: pointer;
+
+        &.-mobile {
+          flex-direction: column;
+        }
+
+        @media screen and (max-width: 767px) {
+          padding: 5px 15px;
+        }
+
+        @media screen and (max-width: 520px) {
+          justify-content: space-between;
+        }
+
+        &-chip {
+          padding: 0 5px;
+          font-size: 10px;
+          width: 40px;
+          text-transform: uppercase;
+
+          &.-ltr {
+            margin-right: 20px;
+
+            @media screen and (max-width: 767px) {
+              order: 4;
+              margin-left: auto;
+              margin-right: 0;
+            }
+          }
+
+          &.-rtl {
+            margin-left: 20px;
+
+            @media screen and (max-width: 767px) {
+              order: 4;
+              margin-right: auto;
+              margin-left: 0;
+            }
+          }
+
+          &.-fund {
+            background-color: $gray;
+            color: $white;
+          }
+
+          &.-tech {
+            background-color: $light-gray;
+            color: $gray;
+          }
+        }
+
+        &-time {
+          font-size: 13px;
+          color: $dark-primary;
+          width: 45px;
+
+          &.-ltr {
+
+          }
+
+          &.-rtl {
+            text-align: right;
+          }
+        }
+
+        &-symbol {
+          font-size: 13px;
+          color: $primary;
+          font-weight: 500;
+
+          &.-ltr {
+            margin-right: 20px;
+          }
+
+          &.-rtl {
+            margin-left: 20px;
+          }
+        }
+
+        &-title {
+          font-size: 13px;
+          color: $dark-primary;
+          width: calc(100% - 270px);
+
+          &.-ltr {
+            @media screen and (max-width: 767px) {
+              margin-right: 20px;
+            }
+          }
+
+          &.-rtl {
+            text-align: right;
+
+            @media screen and (max-width: 767px) {
+              margin-left: 20px;
+            }
+          }
+
+          p {
+            margin: 0;
+          }
+
+          &.-mobile {
+            width: 100%;
+            padding: 5px 10px 0;
+          }
+        }
+
+        &-description {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          padding: 20px 40px 20px 20px;
+          background-color: #f4f6f9;
+          border-left: 1px solid $light-gray;
+          border-right: 1px solid $light-gray;
+          border-bottom: 1px solid $light-gray;
+          color: #565656;
+          font-size: 13px;
+          line-height: 1.8;
+
+          &-close {
+            position: absolute;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+
+            &.-ltr {
+              right: 0;
+              margin-right: 10px;
+            }
+
+            &.-rtl {
+              left: 0;
+              margin-left: 10px;
+            }
+
+            path {
+              fill: $secondary;
+            }
+          }
+
+          &-text {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-filter {
+
+    &-chip {
+      font-size: 12px;
+      color: $secondary;
+      padding: 6px 10px 4px;
+      border-radius: 3px;
+      border: 1px solid $light-secondary;
+      user-select: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      &.-ltr {
+        margin-right: 10px;
+      }
+
+      &.-rtl {
+        margin-left: 10px;
+      }
+
+      span {
+        font-size: 12px;
+        color: $secondary;
+
+        &.-active {
+          border: 1px solid $primary;
+          color: $dark-primary;
+        }
+      }
+
+      &:hover {
+        border: 1px solid $primary !important;
+      }
+
+      &.-active {
+        border: 1px solid $primary;
+        color: $dark-primary;
+      }
+
+      &.-sell_active,
+      &.-sell {
+        color: $danger;
+      }
+
+      &.-buy_active,
+      &.-buy {
+        color: $success;
+      }
+    }
+  }
+}

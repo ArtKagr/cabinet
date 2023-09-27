@@ -1,0 +1,412 @@
+.custom-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-head {
+    display: grid;
+    background-color: #eaeced;
+
+    &.-profile_trades {
+      grid-template-columns: calc(33% - 280px) 8% 8% 11% 8% 8% 8% 8% 8% 240px 30px;
+      border: 1px solid #d9dce1;
+      padding: 0 15px;
+    }
+
+    &.-bottom_sidebar {
+      grid-template-columns: 2% calc(31% - 280px) 8% 8% 11% 8% 8% 8% 8% 8% 240px 30px;
+      background-color: white;
+      border-top: 1px solid #ebedee;
+      border-bottom: 1px solid #ebedee;
+      padding: 0 45px;
+
+      @media screen and (max-width: 1450px) {
+        grid-template-columns: 2% calc(45% - 280px) 13% 13% 14% 13% 240px 30px;
+        padding: 0 45px 0 25px;
+      }
+
+      @media screen and (max-width: 992px) {
+        grid-template-columns: 2% calc(54% - 280px) 15% 15% 14% 240px 30px;
+        padding: 0 20px;
+      }
+    }
+
+    &-column {
+      display: flex;
+      align-items: center;
+      padding: 6px 5px 4px;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #8e9aac;
+      line-height: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &.-cmd,
+      &.-volume,
+      &.-open_time {
+        justify-content: center;
+      }
+
+      &.-open_price,
+      &.-current_level,
+      &.-sl,
+      &.-tp,
+      &.-changedProfit {
+        justify-content: flex-end;
+      }
+
+      &.-open_price,
+      &.-current_level,
+      &.-sl,
+      &.-tp {
+        @media screen and (max-width: 1450px) {
+          display: none;
+        }
+      }
+
+      &.-open_time {
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+
+      &-value {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &.-cmd,
+        &.-open_time,
+        &.-changedProfit {
+          color: #3b3b68;
+        }
+      }
+    }
+  }
+
+  &-row {
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+
+      &.-profile_trades {
+        border-left: 1px solid #d9dce1;
+        border-right: 1px solid #d9dce1;
+        border-bottom: 1px solid #d9dce1;
+      }
+
+      &-trades {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-bottom_sidebar {
+      display: grid;
+      grid-template-columns: 2% calc(31% - 280px) 8% 8% 11% 8% 8% 8% 8% 8% 240px 30px;
+      padding: 9px 0 10px 0;
+      height: 50px;
+
+      @media screen and (max-width: 1450px) {
+        grid-template-columns: 2% calc(45% - 280px) 13% 13% 14% 13% 240px 30px;
+      }
+
+      @media screen and (max-width: 992px) {
+        grid-template-columns: 4% calc(54% - 280px) 14% 14% 14% 240px 30px;
+      }
+
+      &.-child, &.-opened {
+        background-color: white;
+
+        .lfx-table-row-bottom_sidebar-column {
+          border-bottom: none;
+        }
+
+        &.-ltr {
+          border-left: 4px solid #3498db;
+        }
+
+        &.-rtl {
+          border-right: 4px solid #3498db;
+        }
+      }
+
+      &.-child, &.-parent {
+
+        &.-ltr {
+          margin: 0 0 0 45px;
+          padding: 0 45px 0 0;
+        }
+
+        &.-rtl {
+          margin: 0 45px 0 0;
+          padding: 0 0 0 45px;
+        }
+
+        @media screen and (max-width: 1450px) {
+
+          &.-ltr {
+            margin: 0 0 0 25px;
+            padding: 0 45px 0 0;
+          }
+
+          &.-rtl {
+            margin: 0 25px 0 0;
+            padding: 0 0 0 45px;
+          }
+        }
+
+        @media screen and (max-width: 992px) {
+
+          &.-ltr {
+            margin: 0 0 0 20px;
+            padding: 0 20px 0 0;
+          }
+
+          &.-rtl {
+            margin: 0 20px 0 0;
+            padding: 0 0 0 20px;
+          }
+        }
+      }
+
+      &-column {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        line-height: 1;
+        padding: 0 5px;
+        color: #3b3b68;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-bottom: 1px solid #d9dce1;
+
+        &.-trades {
+          border-bottom: none;
+        }
+
+        &.-symbol {
+          cursor: pointer;
+          color: #3498db;
+        }
+
+        &.-cmd {
+          justify-content: center;
+          font-size: 10px;
+          text-transform: uppercase;
+          color: white;
+
+          .-bs-sell {
+            padding: 2px 5px;
+            background-color: #FF4B5F;
+          }
+
+          .-bs-buy {
+            padding: 2px 5px;
+            background-color: #47BF6F;
+          }
+
+          .-bs-copy {
+            padding: 2px 5px;
+            background-color: #3498db;
+          }
+
+          .-bs-detach {
+            padding: 2px 5px;
+            background-color: #ffa552;
+          }
+        }
+
+        &.-volume,
+        &.-open_time {
+          justify-content: center;
+        }
+
+        &.-open_price,
+        &.-current_level,
+        &.-sl,
+        &.-tp,
+        &.-changedProfit,
+        &.-buttons {
+          justify-content: flex-end;
+        }
+
+        &.-buttons {
+          button {
+            height: 30px;
+            width: 100px;
+          }
+        }
+
+        &.-horizontal_dots {
+          cursor: pointer;
+        }
+
+        &.-open_price,
+        &.-current_level,
+        &.-sl,
+        &.-tp {
+          @media screen and (max-width: 1450px) {
+            display: none;
+          }
+        }
+
+        &.-open_time {
+          @media screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+
+        .lfx-table-body {
+
+          &-trader_logo.-bottom_sidebar {
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            margin-left: 10px;
+            margin-right: 6px;
+          }
+
+          &-profit, &-profitability {
+
+            &.-profit {
+              color: #47bf6f;
+            }
+
+            &.-loss {
+              color: #ff4b5f;
+            }
+          }
+        }
+      }
+    }
+
+    &-profile_trades {
+      display: grid;
+      grid-template-columns: calc(33% - 280px) 8% 8% 11% 8% 8% 8% 8% 8% 240px 30px;
+      height: 69px;
+      padding: 9px 15px 10px;
+      background-color: white;
+
+      @media screen and (max-width: 1450px) {
+        grid-template-columns: calc(47% - 280px) 13% 13% 14% 13% 240px 30px;
+      }
+
+      @media screen and (max-width: 992px) {
+        grid-template-columns: calc(58% - 280px) 14% 14% 14% 240px 30px;
+      }
+
+      &-column {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        line-height: 1;
+        padding: 0 5px;
+        color: #3b3b68;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &.-trades {
+          border-bottom: none;
+        }
+
+        &.-symbol {
+          cursor: pointer;
+          color: #3498db;
+        }
+
+        &.-cmd {
+          justify-content: center;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          .-bs-sell {
+            color: #FF4B5F;
+          }
+
+          .-bs-buy {
+            color: #47BF6F;
+          }
+
+          .-bs-copy {
+            color: #3498db;
+          }
+
+          .-bs-detach {
+            color: #ffa552;
+          }
+        }
+
+        &.-volume,
+        &.-open_time {
+          justify-content: center;
+        }
+
+        &.-open_price,
+        &.-current_level,
+        &.-sl,
+        &.-tp,
+        &.-changedProfit,
+        &.-buttons {
+          justify-content: flex-end;
+        }
+
+        &.-buttons {
+          button {
+            height: 30px;
+            width: 100px;
+          }
+        }
+
+        &.-horizontal_dots {
+          cursor: pointer;
+        }
+
+        &.-open_price,
+        &.-current_level,
+        &.-sl,
+        &.-tp {
+          @media screen and (max-width: 1450px) {
+            display: none;
+          }
+        }
+
+        &.-open_time {
+          @media screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+
+        .lfx-table-body {
+
+          &-trader_logo.-profile_trades {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+          }
+
+          &-profit, &-profitability {
+
+            &.-profit {
+              color: #47bf6f;
+            }
+
+            &.-loss {
+              color: #ff4b5f;
+            }
+          }
+        }
+      }
+    }
+  }
+}

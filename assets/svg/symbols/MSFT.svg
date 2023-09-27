@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>#MSFT</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Компании-BIG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="#MSFT" fill-rule="nonzero">
+            <g id="microsoft">
+                <polygon id="Shape" fill="#F1511B" points="241.617978 241.617978 0 241.617978 0 0 241.617978 0"></polygon>
+                <polygon id="Shape" fill="#80CC28" points="512 241.617978 270.382022 241.617978 270.382022 0 512 0"></polygon>
+                <polygon id="Shape" fill="#00ADEF" points="241.617978 512 0 512 0 270.382022 241.617978 270.382022"></polygon>
+                <polygon id="Shape" fill="#FBBC09" points="512 512 270.382022 512 270.382022 270.382022 512 270.382022"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="23" height="5" viewBox="0 0 23 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="Canvas" transform="translate(2838 -392)">
+		<use xlink:href="#icon-dots-fill-1" transform="translate(-2838 392)" fill="#8E9AAC"/>
+		<use xlink:href="#icon-dots-fill-2" transform="translate(-2829.11 392)" fill="#8E9AAC"/>
+		<use xlink:href="#icon-dots-fill-3" transform="translate(-2820.23 392)" fill="#8E9AAC"/>
+	</g>
+	<defs>
+		<path id="icon-dots-fill-1" d="M 2.61362 5C 4.05708 5 5.22724 3.88071 5.22724 2.5C 5.22724 1.11929 4.05708 0 2.61362 0C 1.17016 0 0 1.11929 0 2.5C 0 3.88071 1.17016 5 2.61362 5Z"/>
+		<path id="icon-dots-fill-2" d="M 2.61362 5C 4.05708 5 5.22724 3.88071 5.22724 2.5C 5.22724 1.11929 4.05708 0 2.61362 0C 1.17016 0 0 1.11929 0 2.5C 0 3.88071 1.17016 5 2.61362 5Z"/>
+		<path id="icon-dots-fill-3" d="M 2.61362 5C 4.05708 5 5.22724 3.88071 5.22724 2.5C 5.22724 1.11929 4.05708 0 2.61362 0C 1.17016 0 0 1.11929 0 2.5C 0 3.88071 1.17016 5 2.61362 5Z"/>
+	</defs>
+</svg>
