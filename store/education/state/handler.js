@@ -1,0 +1,72 @@
+export const state = () => ({
+  activeGlossaryMenuPoint: 'A',
+  glossary: {
+    A: {},
+    B: {},
+    C: {},
+    D: {},
+    E: {},
+    F: {},
+    G: {},
+    H: {},
+    I: {},
+    J: {},
+    K: {},
+    L: {},
+    M: {},
+    N: {},
+    O: {},
+    P: {},
+    Q: {},
+    R: {},
+    S: {},
+    T: {},
+    U: {},
+    V: {},
+    W: {},
+    X: {},
+    Y: {},
+    Z: {}
+  },
+  activeEducationFaqTab: '0',
+  faq: {
+    0: { label: null, items: [] },
+    1: { label: null, items: [] },
+    2: { label: null, items: [] },
+    3: { label: null, items: [] },
+    4: { label: null, items: [] },
+    5: { label: null, items: [] },
+    6: { label: null, items: [] },
+    7: { label: null, items: [] },
+    8: { label: null, items: [] }
+  },
+  educationData: [],
+  currentLesson: {},
+  educationWebinars: {
+    status: null,
+    next: [],
+    categories: [],
+    archive: []
+  },
+  currentWebinar: {
+    author_avatar: null,
+    desc: null,
+    full_name: null,
+    short_text: null,
+    status: null,
+    title: null,
+    video_url: null
+  },
+  webinarRegistration: {
+    author_avatar: null,
+    date_start: null,
+    desc: null,
+    full_name: null,
+    status: null,
+    text: null,
+    timezone: null,
+    title: null,
+    id: null
+  },
+  webinarsArchive: []
+})
