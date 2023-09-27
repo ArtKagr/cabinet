@@ -1,4 +1,4 @@
-# liteforex-cabinet-frontend
+# cabinet
 
 ## Build Setup
 
